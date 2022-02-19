@@ -1,0 +1,64 @@
+\begin{table}[H]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regression table: white-black gap without control\label{tab1}}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+  Dependent Variable: &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+black Math Percentage of Proficiency            &\multicolumn{1}{c}{elementary level}&\multicolumn{1}{c}{middle school level}&\multicolumn{1}{c}{high school level}\\
+\hline
+enrolled    &      18        &       -1.929         &      27.5\sym{***} \\
+            &     (13.120)         &     (14.187)         &     (0.000)         \\
+[1em]
+constant      &       -27.5\sym{***}&       29.5\sym{***}&       -5\\
+            &     (2.470)         &     (9.373)         &     (0.000)         \\
+\hline
+Fixed Effects   &    Y     &Y&Y \\
+\hline
+\(N\)       &         140         &          53         &          30         \\
+adjusted \(R^{2}\)&       0.5549         &       0.7306         &       0.8493         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Robust standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}
+
+After including control variables, there is no evidence that MDP helps closer the black-white achievement gap on any of the three school levels, as all coefficients on the variable "enrolled" are statistically insignificant. If this is the case, does it suggest that the Manhood Development Program, or the Cultural Relevant Pedagogy, just as past initiatives, doesn't work well in improving black students' academic performance (in this case, math test scores) either?
+
+\begin{table}[H]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regression table: white-black gap with control\label{tab1}}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+  Dependent Variable:   &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+  Math Percentage of Proficiency gap           &\multicolumn{1}{c}{elementary gap}&\multicolumn{1}{c}{middle school gap}&\multicolumn{1}{c}{high school gap}\\
+\hline
+enrolled    &      -6.321         &       -4.913         &       16.23\\
+            &     (11.406)         &     (8.021)         &     (8.560)         \\
+[1em]
+Out of School Suspension rate gap&       -62.27         &       -45.01         &       14.84         \\
+            &     (66.880)         &     (30.773)         &     (20.043)         \\
+[1em]
+Math Percentage of Proficiency: White&       1.258\sym{***}         &       0.872\sym{***}         &        \\
+            &     (0.165)         &     (0.225)         &            \\
+[1em]
+Math Percentage of Proficiency: ECD&       -0.787\sym{***}         &       -0.191         &       0.693  \\
+(Economically Disadvantaged students) &     (0.236)         &     (0.468)         &     (0.610)         \\
+[1em]
+Math Percentage of Proficiency: LEP&      0.297       &       0.296  &      0.611         \\
+(Limited English Proficient students)  &     (0.227)         &     (0.522)         &     (0.736)         \\
+[1em]
+Dropout Rate gap&              &       &      225.1      \\
+            &             &             &     (138.602)         \\
+[1em]
+constant    &       -13.15         &       -10.01         &      -15.55\\
+            &     (14.541)         &     (10.032)         &     (7.949)         \\
+\hline
+Fixed Effects   &    Y     &Y&Y \\
+\hline
+\(N\)       &          57         &          26         &          14         \\
+adjusted \(R^{2}\)&      0.783         &       0.917         &       0.966         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

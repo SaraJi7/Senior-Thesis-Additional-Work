@@ -1,0 +1,63 @@
+\begin{table}[H]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regression table: black students without control\label{tab1}}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+  Dependent Variable: &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+black Math Percentage of Proficiency            &\multicolumn{1}{c}{elementary level}&\multicolumn{1}{c}{middle school level}&\multicolumn{1}{c}{high school level}\\
+\hline
+enrolled    &      -38.25\sym{***}         &       7.286         &      -15\sym{***} \\
+            &     (10.464)         &     (6.191)         &     (0.000)         \\
+[1em]
+constant      &       27.5\sym{***}&       8&       25\\
+            &     (1.491)         &     (4.995)         &     (0.000)         \\
+\hline
+Fixed Effects   &    Y     &Y&Y \\
+\hline
+\(N\)       &         140         &          53         &          30         \\
+adjusted \(R^{2}\)&       0.3490         &       0.0664         &       0.4019         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Robust standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}
+
+When not including control variables\footnote{I include regressions without controls because I worry that some of the controls are affected by the intervention themselves.}, on both elementary and high school levels, the coefficient on elementary level is statistically significant but negative, which suggests that the program actually has negative effect on students' academic performance on the elementary level. What's more, coefficient on "enrolled" in the middle school level is statistically insignificant.
+
+After including control variables, while coefficients on "enrolled" are either close to zero or positive, none of the three coefficients is statistically significant. In other words, data can't detect that enrollment in the program has an effect on black student's math performance being significantly different from zero in all three school levels.
+
+\begin{table}[H]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Regression table: black students with control\label{tab1}}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+  Dependent Variable: &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+black Math Percentage of Proficiency            &\multicolumn{1}{c}{elementary level}&\multicolumn{1}{c}{middle school level}&\multicolumn{1}{c}{high school level}\\
+\hline
+enrolled    &      -0.0616         &       5.597         &      33.85 \\
+            &     (3.800)         &     (6.164)         &     (38.955)         \\
+[1em]
+Out of School Suspension rate&      13.28         &      -28.73\sym{**} &      -6.977         \\
+            &     (21.665)         &     (5.474)         &     (11.741)         \\
+[1em]
+Math Percentage of Proficiency: ECD&       0.712\sym{***}&       -0.0370         &       0.119 \\
+(Economically Disadvantaged students) &    (0.087)         &     (0.172)         &     (0.123)         \\
+[1em]
+Math Percentage of Proficiency: LEP&     -0.178         &      -0.0856         &       0.546\sym{***}    \\
+(Limited English Proficient students)   &    (0.091)         &     (0.207)         &     (0.239)         \\
+[1em]
+Dropout Rate&              &       &      -38.72      \\
+            &             &             &     (56.899)         \\
+[1em]
+constant      &       8.614&       16.59\sym{***}&       8.647\\
+            &     (6.810)         &     (5.234)         &     (16.387)         \\
+\hline
+Fixed Effects   &    Y     &Y&Y \\
+\hline
+\(N\)       &         140         &          53         &          30         \\
+adjusted \(R^{2}\)&       0.574         &       0.241         &       0.648         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Robust standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+\end{table}

@@ -1,0 +1,230 @@
+\documentclass{cup-ino}
+\usepackage{setspace} 
+\usepackage[utf8]{inputenc}
+\usepackage{longtable}
+\usepackage{blindtext,alltt}
+\usepackage{ragged2e}
+\usepackage{hanging}
+\usepackage{float}
+\usepackage{longtable}
+
+
+%----------Packages----------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{subfiles}  %%to include subfiles so the main file is less messy
+%\usepackage{amsrefs}
+\usepackage{dsfont}
+\usepackage{mathrsfs}
+\usepackage{stmaryrd}
+\usepackage[all]{xy}
+\usepackage[mathcal]{eucal}
+\usepackage{verbatim}  %%includes comment environment
+\usepackage{fullpage}  %%smaller margins
+
+\usepackage{lipsum}       % for sample text
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{capt-of}
+\usetikzlibrary{shapes,backgrounds}
+\def\firstcircle{(90:1.5cm) circle (1.7cm)}
+\def\secondcircle{(210:1.5cm) circle (1.7cm)}
+\def\thirdcircle{(330:1.5cm) circle (1.7cm)}
+
+
+\setlength{\parindent}{3em}
+\setlength{\parskip}{0.8em}
+%----------Commands----------
+
+%%penalizes orphans
+\clubpenalty=9999
+\widowpenalty=9999
+
+\newcommand{\source}[1]{\caption*{Source: {#1}} }
+%% bold math capitals
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bB}{\mathbf{B}}
+\newcommand{\bC}{\mathbf{C}}
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\bE}{\mathbf{E}}
+\newcommand{\bF}{\mathbf{F}}
+\newcommand{\bG}{\mathbf{G}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bJ}{\mathbf{J}}
+\newcommand{\bK}{\mathbf{K}}
+\newcommand{\bL}{\mathbf{L}}
+\newcommand{\bM}{\mathbf{M}}
+\newcommand{\bN}{\mathbf{N}}
+\newcommand{\bO}{\mathbf{O}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bQ}{\mathbf{Q}}
+\newcommand{\bR}{\mathbf{R}}
+\newcommand{\bS}{\mathbf{S}}
+\newcommand{\bT}{\mathbf{T}}
+\newcommand{\bU}{\mathbf{U}}
+\newcommand{\bV}{\mathbf{V}}
+\newcommand{\bW}{\mathbf{W}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bZ}{\mathbf{Z}}
+
+%% blackboard bold math capitals
+\newcommand{\bbA}{\mathbb{A}}
+\newcommand{\bbB}{\mathbb{B}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbD}{\mathbb{D}}
+\newcommand{\bbE}{\mathbb{E}}
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbG}{\mathbb{G}}
+\newcommand{\bbH}{\mathbb{H}}
+\newcommand{\bbI}{\mathbb{I}}
+\newcommand{\bbJ}{\mathbb{J}}
+\newcommand{\bbK}{\mathbb{K}}
+\newcommand{\bbL}{\mathbb{L}}
+\newcommand{\bbM}{\mathbb{M}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\bbO}{\mathbb{O}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbS}{\mathbb{S}}
+\newcommand{\bbT}{\mathbb{T}}
+\newcommand{\bbU}{\mathbb{U}}
+\newcommand{\bbV}{\mathbb{V}}
+\newcommand{\bbW}{\mathbb{W}}
+\newcommand{\bbX}{\mathbb{X}}
+\newcommand{\bbY}{\mathbb{Y}}
+\newcommand{\bbZ}{\mathbb{Z}}
+
+%% script math capitals
+\newcommand{\sA}{\mathscr{A}}
+\newcommand{\sB}{\mathscr{B}}
+\newcommand{\sC}{\mathscr{C}}
+\newcommand{\sD}{\mathscr{D}}
+\newcommand{\sE}{\mathscr{E}}
+\newcommand{\sF}{\mathscr{F}}
+\newcommand{\sG}{\mathscr{G}}
+\newcommand{\sH}{\mathscr{H}}
+\newcommand{\sI}{\mathscr{I}}
+\newcommand{\sJ}{\mathscr{J}}
+\newcommand{\sK}{\mathscr{K}}
+\newcommand{\sL}{\mathscr{L}}
+\newcommand{\sM}{\mathscr{M}}
+\newcommand{\sN}{\mathscr{N}}
+\newcommand{\sO}{\mathscr{O}}
+\newcommand{\sP}{\mathscr{P}}
+\newcommand{\sQ}{\mathscr{Q}}
+\newcommand{\sR}{\mathscr{R}}
+\newcommand{\sS}{\mathscr{S}}
+\newcommand{\sT}{\mathscr{T}}
+\newcommand{\sU}{\mathscr{U}}
+\newcommand{\sV}{\mathscr{V}}
+\newcommand{\sW}{\mathscr{W}}
+\newcommand{\sX}{\mathscr{X}}
+\newcommand{\sY}{\mathscr{Y}}
+\newcommand{\sZ}{\mathscr{Z}}
+
+\newcommand{\contradict}{\Rightarrow\!\Leftarrow}
+\renewcommand{\emptyset}{\O}
+
+\providecommand{\abs}[1]{\lvert #1 \rvert}
+\providecommand{\norm}[1]{\lVert #1 \rVert}
+\providecommand{\x}{\times}
+\providecommand{\ar}{\rightarrow}
+\providecommand{\arr}{\longrightarrow}
+
+
+%----------Theorems----------
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{nondefinition}[theorem]{Non-Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+
+\numberwithin{equation}{subsection}
+
+
+%----------Footnote-----------
+\makeatletter
+\def\footnoterule{\kern-3\p@
+  \hrule \@width 2in \kern 2.6\p@} % the \hrule is .4pt high
+\makeatother
+
+%----------Title-------------
+\title{Senior Thesis}
+%\author{Sara Ji}
+%% Full title
+\title{Will programs targeting underrepresented students lessen racial inequalities in test scores? Evidence from a California school district}
+%% Shorter title, for use in page header
+\runningtitle{Template for CUP-INO}
+%\author{Sara Ji}
+
+
+% \author{Anon Authorone and Anon Authortwo}
+
+%% The .bib file containing reference entires, for use with biblatex. CUP-INO loads the biblatex-chicago package with customisations for INO.
+
+\begin{document}
+
+\maketitle
+\begin{center}
+Sara Ji
+
+Primary Advisor: Geoff Clarke
+
+Secondary Advisor: Nelson Sa
+
+Third Advisor: Joshua Goodman
+
+\end{center}
+
+\begin{flushleft}
+\begin{abstract}
+Closing the disturbingly large and stubbornly persistent racial achievement gap could dramatically narrow the racial divide. However, the achievement gap is deeply embedded in American society, and, many past efforts have not paid off. This paper uses an empirical approach to examine whether a program implementing cultural relevant pedagogies (CRP) could be more effective for student academic achievement. Fixed effects regression results suggest that the program doesn't have a statistical significant positive effect on closing the black-white achievement gap, while synthetic control model shows a small positive effect of the program on improving black students' test scores on elementary and middle school levels. Nevertheless, academic performance shouldn't be the sole standard when evaluating student success and late life outcome. 
+\end{abstract}
+
+\newpage
+\onehalfspacing
+\section{Introduction}
+\subfile{Introduction.tex}
+
+\section{Literature Review}
+\subfile{Literature Review.tex}
+
+\section{Program Description}
+\subfile{Program Description.tex}
+
+\section{Qualitative Analysis}
+\subfile{Qualitative Analysis.tex}
+
+\section{Methodology and Data}
+\subfile{Methodology and Data.tex}
+
+\section{Results}
+\subfile{Results.tex}
+
+\section{Limitations}
+\subfile{Limitations.tex}
+
+\section{Discussion}
+\subfile{Discussion.tex}
+
+\section{Conclusion}
+\subfile{Key Challenges.tex}
+
+\section{Reference}
+\subfile{Reference.tex}
+
+
+\end{flushleft}
+\end{document}
