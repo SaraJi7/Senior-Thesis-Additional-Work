@@ -1,0 +1,1833 @@
+\documentclass[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{Style_Paper}
+\usepackage{CJKutf8} %chinese characters
+\usepackage{natbib}
+\usepackage[pdftex]{color, graphicx}
+%\usepackage{hyperref}
+%\usepackage{pause}
+\usepackage{tabularx}
+\usepackage{bbm}
+% \usepackage{bbold}
+%\usepackage{pp4link}
+%\usepackage{mpmulti}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage[capposition=top]{floatrow} %notes to figures
+\usepackage{caption}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{bbm}
+\usepackage[normalem]{ulem}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage{geometry}
+\usepackage[capposition=top]{floatrow}
+\usepackage{threeparttable}
+\usepackage{rotating,geometry,setspace}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{subfloat}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage{soul}
+\usepackage{array}
+\usepackage{url}
+\usepackage[toc,page]{appendix}
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\MakeInnerQuote{'}
+
+\justifying
+
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks=true,
+            linkcolor=red,
+            urlcolor=blue,
+            citecolor=blue]{hyperref}
+
+\usepackage{soul}
+
+\newtheorem{fact}{Fact}
+
+\newcommand{\comm}{\textcolor{red}} 
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{pdflscape}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{MaxMatrixCols}{10}
+
+%\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\geometry{letterpaper,tmargin=1.2in,bmargin=1.2in,lmargin=1.2in,rmargin=1.2in}
+\linespread{1.35}
+%\doublespace
+\setlength{\footnotesep}{0.7\baselineskip}
+\newtheorem{result}{Proposition}
+\newtheorem{claim}{Claim}
+\newtheorem{assumption}{Assumption}
+\renewcommand{\qed}{\quad \rule{1.8mm}{1.8mm}}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+%\input{tcilatex}
+            
+
+
+\newcommand{\csmw}{\textcolor{blue}} 
+\newcommand{\jieb}{\textcolor{purple}} 
+\newcommand{\pjb}{\textcolor{red}} 
+
+\usepackage{titling}
+\setlength{\droptitle}{-0.7in}
+
+\begin{document}
+
+\begin{spacing}{1.2}
+\begin{titlepage}
+
+\title{Omnia Juncta in Uno: \\ Foreign Powers and Trademark Protection \\ in Shanghai's Concession Era\thanks{Harvard Business School and NBER, lalfaro@hbs.edu; UIBE, baoge@uibe.edu.cn; George Washington University, xchen@gwu.edu; UIBE, hongjunjie@uibe.edu.cn; Ludwig Maximilian University of Munich and NBER, claudia.steinwender@econ.lmu.de. We thank Rocco Macchiavello, Wolfgang Keller, Dave Donaldson, and seminar and conference participants at Yale, Northwestern, MIT Sloan, Duke Fuqua, HEC, GWU, NBER China Group Meeting, Barcelona GSE Summer Forum, and SIOE for very helpful comments and suggestions. %We are also grateful to Robert Bickers, Hans van de Ven, Dave Donaldson, James Lee, and Rick Hornbeck for sharing data with us. 
+We also thank our research assistants, Mengru Wang, Chelsea Carter, Xueyun Luo, Julia Reinhold, Alison Yunfan Zhao, Zineb El Mellouki, Emanuela Migliaccio, Gerard Domenech Arumi, Erxiao Marshall Mo, Tianyu Zhao, Mona Dong, Alexander Shusko, Chris Kaiser, and Bennett Adamson, for outstanding assistance.}} 
+
+
+%\author{Laura Alfaro, \textit{Harvard Business School} \\ Cathy Ge Bao, \textit{UIBE} \\ Maggie X. Chen, \textit{George Washington University} \\ Junjie Hong, \textit{UIBE} \\ Claudia Steinwender, \textit{MIT Sloan}}
+%\author{Laura Alfaro\thanks{Harvard Business School \& NBER}  \and  Cathy Ge Bao\thanks{UIBE} \and  Maggie X. Chen \thanks{George Washington University} \and Junjie Hong \footnotemark[3] \and Claudia Steinwender \thanks{MIT Sloan}}
+
+\vspace{-1.5cm}
+
+\author{Laura Alfaro  \and  Cathy Ge Bao \and  Maggie X. Chen  \and Junjie Hong  \and Claudia Steinwender}
+
+\vspace{-1.5cm}
+\date{July 2021 (Preliminary and Incomplete)}
+
+\maketitle
+\vspace{-1cm}
+
+\begin{abstract}
+\begin{spacing}{1.0}
+
+\small Intellectual property (IP) institutions have been a salient topic of economic research and political disputes. %, including the latest U.S.-China trade war.
+In this paper, we investigate the effects of trademark protection, an under-examined form of IP protection, by exploring a historical precedent: China's trademark law of 1923---%a law enacted not to protect the domestic economy,
+an unanticipated, disapproved response to end conflicts between foreign powers. Exploiting a unique, newly digitized firm-level dataset from Shanghai in 1870-1941 and brand-level price series,
+%and bilateral product trade data, 
+we show that the trademark law spurred growth and brand investment for Western firms with greater dependence on trademark protection, but did not lead to significant changes in  prices. In contrast, Japanese businesses, who had frequently been accused of counterfeiting, experienced employment contractions while attempting to build their own brands after the law. Further, the trademark law led to greater domestic integration both within and outside the boundary of Western firms and the growth of Chinese agents. Based on a stylized model featuring heterogeneous authentic and counterfeiting producers, we show that the trademark law raised aggregate welfare by 5.4 percent via reduced information frictions and increased authentic product variety. Finally, a comparison with previous attempts by foreign powers to strengthen trademark protection --- such as extraterritorial rights, bilateral commercial treaties, and an unenforced legal trademark code --- shows the alternative institutions were ultimately unsuccessful. 
+
+%Our long time horizon also enables us to compare the effect of the domestic trademark law to alternative, ultimately unsuccessful, attempts by foreign powers including extraterritoriality (the direct import of foreign legal institutions in China), bilateral commercial treaties, and a 1904 legal trademark code that had never been put into force.
+
+\end{spacing}
+\end{abstract}
+
+\vspace{-0.4cm}
+
+\begin{center}
+\begin{minipage}{0.92\textwidth}
+\begin{small}
+\textit{JEL: F2, D2, O1, O3, N4} \\[0.1cm]
+\textit{Keywords: trademark, firm growth, domestic integration, IP institutions}
+\end{small}
+\end{minipage}
+\end{center}
+\vspace{1in}
+\end{titlepage}
+
+\end{spacing}
+
+
+\newpage
+
+\hspace{-0.5cm}{``Omnia Juncta in Uno.''}
+ 
+\hspace{6cm}\textit{``All Joined in One'' - Shanghai Municipal Seal}
+
+\hspace{6cm}\textit{International Settlement, established in 1843}
+
+\vspace{0.5cm}
+
+\section{Introduction} \label{sec:introduction}
+
+Disagreements over the protection of intellectual property (IP) have been a prime cause of international political and economic disputes. %including the recent trade war between the United States and China. 
+Firms from developed countries have often urged their governments to negotiate stronger IP protection overseas, especially in less advanced economies, while developing nations have longstanding concerns over the implications of IP protection for economic growth, market competition, and consumer welfare. %; for example, the \emph{U.S.-China Phase One Agreement} signed in January 2020 prominently features IP provisions. 
+
+Within the IP-intensive sectors of the economy, trademark-intensive industries contribute most to employment (90\% in US and 78\% in Europe).\footnote{See \cite{uspto2016} and \cite{euipo2019}.} This economic importance stands in stark contrast to the academic literature, which has focused almost exclusively on patent and copyright protection. In this paper, we aim to close the gap in the literature and investigate  the economic effects of trademark protection by exploiting a historical precedent — the introduction of China’s first trademark law of 1923 — and a series of newly digitized micro-level datasets in Shanghai that provide rare, first-hand insights into how firms from around the world operated and evolved in arguably one of the most volatile and complex markets before and after the birth of trademark institutions. 
+
+
+Different from patents or copyrights, the economic rationale for trademarks is to solve an asymmetric information problem that arises in settings when buyers are unable to observe intrinsic product characteristics at the point of purchase, e.g., product materials or ingredients that affect the quality, safety or durability of the products  (e.g., \citealp{Shapiro1982}, \citealp{Shapiro1983}).\footnote{As defined by the USPTO, a patent is a ``limited duration property right relating to an invention in exchange for public disclosure of the invention'' and protects ``the right to exclude others from making, using, offering for sale, or selling an invention.'' A copyright protects ``original works of authorship'' in literature, music, art, architecture as well as software. Patents and copyrights address market failures associated with the public good nature of knowledge and aim to provide incentives for innovation and knowledge creation.} One way to overcome this information asymmetry problem is for sellers to use trademarks to signal the identity of the producer to the consumer \citep{GrossmanShapiro1988aer}.\footnote{According to the 1875 \emph{Trade Marks Registration Act} of Great Britain, one of the world's first trademark laws, a trademark is ``a device, or mark, or name of an individual or firm printed in some particular and distinctive manner; or a written signature or copy of a written signature of an individual or firm; or a distinctive label or ticket.''} Trademarks enable firms to build and benefit from reputation over time, but counterfeiting undermines the value and growth of this firm-specific asset.\footnote{There are two types of counterfeiting: (i) deceptive counterfeiting where the authentic and counterfeited products are similar in design and packaging and unaware consumers have difficulties distinguishing the two and are deceived to unknowingly purchase (lower-quality) counterfeited goods (such as cigarettes, drugs, and cosmetics); and (ii) non-deceptive counterfeiting where consumers are able to distinguish between authentic and counterfeited products and knowingly purchase the latter (such as counterfeits of luxury goods). Given the historical context we study and the types of counterfeits documented in the relevant period, our paper considers the case of deceptive counterfeiting and the economic implications of the trademark law in such settings.} As the jurisdiction of laws is national by nature, this poses an especially difficult problem in the context of international trade and commerce.
+
+At the beginning of the 20th century, China emerged as one of the world's most important markets for trademark protection due to its market size and absent formal trademark institutions. As noted in the \emph{Manchester Guardian} on June 2, 1904, ``perhaps for no market in the world is it more necessary that the trademarks upon our productions should be jealously safeguarded'' (quoted in \citealp{Heuser1975}). However, unlike most other trademark laws throughout history, the urgent need for trademark protection described above did not stem from disputes between foreign and domestic businesses or demand from domestic businesses, but rather fierce conflicts between foreign powers (\citealp{Motono2011}).
+
+% the below is lengthy, it would be better to shorten it to essence and move details to historical section
+After the Opium Wars, gunboats from Western nations forced Qing China to conclude numerous `Unequal Treaties' that granted extraterritorial (ET) rights to foreign powers and open new treaty ports such as Shanghai and Tianjin to foreign trade and businesses. Entering one of the oldest societies that had been largely closed to the rest of the world for centuries, foreign businesses faced a series of formidable obstacles. In addition to language and cultural barriers, businesses first and foremost faced the challenge that economic activity had been conducted in the absence of formal economic rules. 
+
+Among the foreign powers, British businesses attained early access and dominance in the Chinese market, but this status was soon challenged by Japan after the Treaty of Shimonoseki in 1895. Counterfeits of Western trademarks, especially by Japanese manufacturers, rose rapidly after the 1890s, leading to a fast-growing volume of trademark disputes between Western nations and Japan, spanning across products from tobacco and textile to food and cosmetics. Despite strong protests from European countries, the Japanese government often chose not to revoke alleged counterfeiting activities and was unwilling to enter into an agreement with Western countries for reciprocal protection of trademarks in China (\citealp{PatentTrademarkReview1907}).
+
+
+%Yet, despite all the unfamiliarities and social, political and economic turmoils, some of the greatest corporations----western, Japanese, and Chinese---emerged from this era and achieved remarkable growth. We examine in this paper how the introduction of modern IP institutions, specifically, the Trademark Law shaped the industrial development in Shanghai. 
+
+%Often labeled as the “Paris of the East,” Shanghai had emerged by the first third of the 20th century as one of the largest cities in the world and the commercial center of East Asia with over 3 million inhabitants, vibrant manufacturing and service sectors, and remarkable openness to trade, investment, and immigrants (Osterhammel, 1989). One of the important features of Shanghai (and other so-called “Treaty Ports”) in the late 19th and early 20th century is the coexistence and frequent clashes between modern and imperial, formal and informal, imported and domestic institutions all of which jointly governed Shanghai's economic activities. 
+
+%The signing of Unequal Treaties between foreign powers and China, by granting foreigners extraterritorial power in treaty ports, also forcefully introduced plural foreign, modern legal institutions, including IP laws, into China (\citealp{Rich1925};  \citealp{Lee1992}; \citealp{Kirby1995}).  Within decades, economic activities in China's port cities could be subject to 22 different foreign legal systems depending on which countries entered or exited treaties with China due to geopolitical reasons such as the start and end of World War I. 
+
+At the turn of the 20th century, China's leading economic partners---Great Britain, the United States, and Japan--- signed bilateral commercial treaties with China promising to give up ET if China were to regulate foreign commerce along Western lines, including formal protection of trademarks. Great Britain and Japan both tried to  implant their respective trademark laws involving different filing principles into China. This competition, however, resulted in an indefinite postponement of the trademark law. %However, these foreign legal systems and treaties, often competing with one another, caused complexity and conflicts for businesses and governments and were found inadequate because of the lack of a domestic institution to enforce compliance (Cassel, 2002). %[WE NEED A CITE] 
+Britain and Japan spent the following two decades trying to negotiate the details of the Chinese trademark law, without success in reaching agreements. Neither government anticipated the Chinese government to prepare its own trademark law. In May 1923, China surprised foreign governments by passing its first trademark law. The law, completely unanticipated by the foreign community and failing to satisfy the demands of either Western or Japanese government, was broadly rejected and only later unwillingly accepted by foreign powers (\citealp{Motono2011}; \citealp{PatentTrademarkReview1923}). These historical characteristics of the law offer us a unique context and an arguably exogenous institution shock for studying the economic impacts of trademark protection and comparing the effects of alternative institution approaches. 
+
+%In contrast to most other national trademark institutions, the law was not a product of domestic capitalism or related intents, but rather an unanticipated response by the Chinese government to end the trademark conflicts between the British and the Japanese governments and more importantly to meet the conditions for the relinquishment of foreign extraterritoriality (ET). 
+
+%In this paper, we exploit this unique historical context to study two questions: First, how does better trademark protection affect the growth of firms and trade? Second, how does a trademark law compare to alternative institutional arrangements to protect trademarks such as ET or bilateral treaties?
+
+In this paper, we analyze the effects of the trademark law on the growth and organization of foreign and Chinese firms and ultimately economic welfare. We examine empirically how Western, Japanese and Chinese firms, with their distinct roles in the trademark conflicts, respectively responded to the trademark law, taking advantage of a series of novel micro-level datasets that enable us to measure over-time firm outcomes from employment and organizational changes to advertising investment and prices. 
+
+The establishment of the trademark law could shape firm growth and organization in complex ways. On the one hand, trademark protection can lead to a direct market reallocation within brand-specific segments from counterfeiters to authentic producers and even increase aggregate consumer demand by raising consumer confidence of receiving authentic products upon purchase. On the other hand, unlike patents and copyrights, trademarks protect the rights to use a mark, rather than the rights to make or sell (sometimes similar) products with different marks, and cannot prohibit original counterfeiters from obtaining new marks and competing as new varieties. As a result, while trademark protection should help authentic producers capture their brand-specific markets, it may exert ambiguous effects on competition and subsequently firm prices and investment decisions.
+
+%We begin by providing a simple conceptual framework to help guide the empirical analysis. In the framework, trademark protection allows a brand producer to have a monopoly over her brand. Without trademark protection, a counterfeiter producing a lower quality version of the product at lower cost enters the market. Consumers are aware of the presence of counterfeits in the market, but cannot distinguish them upon purchase; this leads to a reduction in aggregate demand for the product. Our framework predicts that better trademark protection leads to growth of the brand producer while the counterfeiter contracts. Prices are predicted to increase, but --- surprisingly to  advocates of IP protection --- the effect on total production and consumer surplus is ambiguous and depends on how much consumers dislike the counterfeit versus how much the counterfeiter reduces the market power of the brand producer.
+
+We empirically address these questions by implementing a difference-in-difference (DD) analysis that compares the growth and organization decisions of firms offering more or less trademark-intensive products. We construct a firm-specific measure of trademark intensity based on each firm's initial product composition and historical trademark registration data in each product category in a number of foreign countries before 1922. Given that foreign powers neither anticipated nor approved the introduction of the trademark law, we  expect the timing of the law to be exogenous to the growth of trademark-intensive foreign firms, an assumption that we can test in a pre-trend analysis. We conduct the DD analysis by exploiting two unique, complementary panel datasets: an annual firm-employee level dataset from Shanghai covering 1872 to 1942 --- the city that accounted for 67\% of China's inward FDI in manufacturing and 73\% of China's total factory output by 1930s ---, and a monthly brand-specific price series covering around 30 products during 1923-1930. 
+
+Our analysis suggests that the trademark law led to significant employment and organizational changes in trademark-intensive firms and the effects varied sharply between the two sides of the trademark conflicts. The employment of Western firms grew, on average, by 5\%, while Japanese businesses, in contrast, witnessed an average reduction of employment by 15\%. Western firms were also less likely to exit the market and drop trademark-intensive products and more likely to invest in local advertising after the enactment of the trademark law. Japanese firms became also more likely to post advertisements and add trademark-intensive products to their portfolio, suggesting that Japanese firms attempted to build up their own brands after the law. %In addition, we show in the online appendix that the effects of the trademark law are mirrored in China's imports: the trademark law led to increasing imports in trademark-intensive products from Western countries, while imports from Japan fell (insignificantly) after 1923. 
+To gauge the potential implications for consumers, we also compare brand-level prices before and after the registration of trademarks and show that brand prices did not change significantly after trademark registrations, suggesting no marked increases in the market power of authentic firms. 
+
+The impacts of the trademark law  go beyond Western firm growth and market reallocation. Exploring information on domestic linkages of foreign firms, we find that Western businesses adapted their domestic integration decisions in response to the trademark law. Confronted with extensive obstacles such as language barriers and inland market access restrictions, many Western businesses turned to Chinese nationals or worked directly with Chinese businesses to explore their social networks. At the same time, however, the absence of formal legal institutions including the trademark law inhibited the establishment of a strong trust-based relationship between foreign businesses and their domestic employees and agents. Our evidence suggests that the trademark law led to greater domestic integration by Western firms both within and outside the boundary of the firm: they were more inclined to promote Chinese employees within their organizations as well as utilize Chinese employees and businesses as agents. Consequently, Chinese agent businesses witnessed a significant growth after the trademark law.
+
+To quantify the aggregate economic effects of the trademark law, we develop a stylized model featuring heterogeneous authentic and counterfeiting producers.  In the model, consumers are unable to verify the true quality of the product upon purchase and face a certain probability of encountering counterfeits. An increase in trademark protection, by lowering the consumers' probability of receiving counterfeits, leads to a direct market reallocation within brand-specific segments from counterfeiters to authentic producers and increases the number of (authentic) varieties and the output of individual authentic firms as documented in the empirical evidence. Computing the welfare change based on the model's sufficient statistics suggests that the trademark law raised aggregate welfare by 5.4\%, via reduced information frictions and increased authentic product varieties.  
+
+As the 1923 trademark law was preceded by a series of alternative institutional models exploited by foreign powers to address trademark issues, we also compare the effect of the 1923 trademark law to these preceding institutional arrangements including: 1) ET, which can be interpreted as a direct import of foreign legal institutions in China; 2) bilateral commercial treaties between China and foreign countries; and 3) the legal trademark code in 1904 that had never been put into force. We find that none of the alternative institutional arrangements exerted a positive and significant effect on firm growth, highlighting the importance of the domestic institutional reform.
+
+An extensive literature on IP institutions assesses the effects of patent laws and, to a lesser extent, copyright protection, on economic growth.\footnote{See, for example, \citet{Moser2013} and \citet{Sampat2018} for a comprehensive review on patent institutions and \citet{BiasiMoser2018}, \citet{GiorcelliMoser2020}, \citet{OberholzerGeeStrumpf2007}, and \citet{LiMacGarvieMoser2018} for recent studies of copyrights.} In contrast, there has been limited research on the economic effects of trademark protection. The main theoretical work on this topic is \citet{GrossmanShapiro1988aer, GrossmanShapiro1988qje} who analyze the positive and normative effects of counterfeit trade on consumers, firms and total welfare and the implications of policies designed to combat counterfeiting based on earlier work by \citet{Shapiro1982,Shapiro1983}. Recent work by \citet{HeathMace2020} offers empirical evidence on the effects of trademark protection on the profits of US firms exploring the 1996 Federal Trademark Dilution Act, which granted additional legal protection to selected trademarks. The paper finds that the Act raised treated firms’ operating profits, lowered entry and exit, and reduced innovation and product quality. \citet{Qian2008}, examining counterfeiting among Chinese shoe companies, finds that a loosening of counterfeit enforcement led to alternative differentiation strategies by authentic producers. Low-quality counterfeit entrants are found to induce authentic producers to upgrade product quality and invest in signaling and self-enforcement against counterfeits. In contrast, \citet{Kuroishi2020} finds that the quality of Chinese tyre exports to Africa increased once the African countries joined the Madrid Protocol, which simplified the international registration process for trademarks. 
+
+In contrast to previous studies, our paper focuses on a fundamental, rather than incremental, change in trademark protection: the implementation of an entire trademark law. Furthermore, the historical setting provides arguably exogenous variation in the timing of the trademark law that allows us to establish a causal effect of China's first trademark law on firm growth and consumer welfare. By examining foreign firm  responses to the trademark law and their domestic integration decisions, our study also offers one of the first pieces of evidence for the impact of trademark institutions on international commerce and linkages between advanced foreign firms and less developed domestic economies. Further, the quantitative analysis of the welfare effects provides important new insights on the potential aggregate impact of the trademark law.  %LA. Not priority at all. But Shouldn't we cite some institution literature, as we had in some older versions, to emphasize the link to broader change (as opposed to incremental). I also think we should say we focus on a case where it is harder to distinguish quality.
+
+Our paper is also related to an emerging literature assessing the historical patterns of Chinese trade during the treaty-port era, including \citet{Jia2014}, \citet{KellerLiShiue2013}, and \citet{KellerShiue2020nber}. Studying the long-run development of China's treaty ports, \citet{Jia2014} examines the development paths of treaty ports and their neighbors and the roles of migration and sector-wise growth. \citet{KellerLiShiue2013} and \citet{KellerShiue2020nber} document the historical patterns in China's trade and FDI, and assess how these patterns compare to those of modern trade and investment.
+
+
+The rest of the paper is organized as follows. Section \ref{sec:historicalbackground} describes the historical background and timeline for the birth of China's first trademark law. Section \ref{sec:data} explains the construction of the business-employee panel data, brand price series, and trademark registration database and presents several stylized facts. Section \ref{sec:empirical_evidence} implements the empirical analysis on the role of the trademark law in firm growth and reallocation, prices, and domestic integration. In Section \ref{sec:model}, we develop a  model featuring information friction and a coexistence of authentic and counterfeiting producers  to estimate the effects of trademark protection on aggregate economic outcomes. In Section \ref{sec:emp_alternative_institutions}, we discuss and compare the effects of alternative institutional arrangements. Section \ref{sec:conclusion} concludes.
+
+
+\section{History of China's First Trademark Law} \label{sec:historicalbackground}
+
+China's historical use  of trademarks can be traced back to the Northern Zhou Dynasty (556-580 A.D.), when merchants began to use different marks to distinguish their products and craftsmanship from others (\citealp{Chang2014}). Porcelain and ceramics are one of the oldest industries in which such marks had been used for centuries (\citealp{Heuser1975}). In contrast to the long history of trademark uses, China's formal institutions to protect trademarks has had a much shorter and complex timeline. Before the late 1800s, written Chinese law (e.g., the Great Qing Code) referred very little to the regulation of private economic activity (\citealp{Kirby1995}), with the main exceptions being the rules preventing monopolies and unfair trading. Instead, protection of trademarks had been governed by the by-laws of commercial organizations (guilds or shanghui) (\citealp{Alford1995}). 
+
+Trademark protection in pre-1949 China underwent several phases, from the imposition of foreign legal institutions (ET) to bilateral commercial treaties with major trading partners, and from the Qing 1904 code that had not been put into force to finally the 1923 birth of China's first comprehensive trademark law. In the initial phases, competition by Japanese and Western firms over their grasps of the Chinese market spurred growing Anglo-Japanese conflicts over trademark protection. These conflicts began at the end of the 19th century and remained unresolved after several rounds of failed negotiations among the British, Japanese and Chinese governments. In the midst of continuing Anglo-Japanese negotiations, the Republican-era government surprised foreign nations by introducing its first trademark law in 1923 to end the continuous disagreements between foreign powers, and as a first step towards removing ET altogether. Even though foreign governments rejected the new trademark law as it conflicted with their interests, it entered into force and remained in place even after the turnover of the government in 1927. Below we describe the three phases leading up to the 1923 trademark law.\footnote{We refer interested readers to \citet{Motono2011, Motono2013} for a comprehensive account of the history behind the trademark system.}
+
+\subsection{The Clashes of Foreign Legal Institutions}
+
+After the Opium War, gunboats from Western nations forced Qing China to conclude a series of `Unequal Treaties' which allowed foreign merchants to trade in Chinese ports, established regulations for the conduct of trade, and granted foreign citizens and businesses extraterritorial rights, sometimes known as consular jurisdiction. Cases in which foreign companies with ET were defendants would be tried at their respective Consular Courts in Shanghai following the laws of their home country, while other cases would be tried in the ``Mixed Court'' following Chinese jurisdiction.
+
+This led to the coexistence of up to 22 different legal systems in Shanghai, depending on which treaties got signed, expired, or were renewed. The laws that specific firms had to adhere to changed over time and depended not only on the nationality of the specific firm, but also on the nationality of all involved parties. The coexisting legal systems and consular courts led to a complex ``legally pluralistic environment,'' and often competed for jurisdiction and failed to cooperate with each other. By the early 1900s, the web of treaties attained such a level of complexity that ``even accomplished international lawyers found extremely difficult to assess with certainty the relevant jurisdictions and obligations'' (\citealp{Cassel2012}). 
+
+%What further complicated the problem was that while most ``unequal treaties'' contained most-favored-nation clauses, which in theory meant that any treaty power could claim privileges conceded to any other nation, the extent to which ET was subject to MFN clauses depended on the actual language of the treaty (for example, the clauses were missing in the British and American treaties but present in the French treaty). 
+
+Around the same time, China had emerged as one of the most important markets for trade and a major source of economic hope for Western merchants and manufacturers (in particular, Great Britain) which attained early entry and dominance in Chinese imports. This dominance was then challenged by Japan which gained extraterritorial rights after the end of the first Sino-Japanese War in 1894–95 and the Treaty of Shimonoseki in 1895. As Japanese firms lagged technologically behind their Western rivals, they were sometimes found to  manufacture counterfeits of Western goods and infringe on Western trademarks.\footnote{For example, the \cite{PatentTrademarkReview1907} argued that ``Japanese trade in China consists largely of Japanese imitations, both undisguised and colorable, of foreign goods. The trade is assuming the dimensions of a great national industry.''} Western-Japanese conflicts surrounding trademark started when Great Britain discovered a series of Japanese counterfeits in 1906.\footnote{See \cite{Motono2011} for a detailed description of some notable cases including, for example, Sir Elkanah Armitage Sons Ltd. vs. Konishi Hanbei and the ``Peacock'' brand by British American Tobacco vs. the ``Peafowl'' brand by Sanlin Gongsi. The \emph{North China Herald}  also reported additional prominent cases such as British Whiskey brand ``Black and White'' producer J. Buchanan & Co. vs. an Osaka spirit merchant.}
+
+% both also described in appendix section \ref{appsec:examples_trademarks}.
+
+Great Britain immediately attempted to protect their trademarks by asking British firms to register trademarks in their Chinese and Japanese consulates. The marks were then transmitted to be recorded at the Imperial Maritime Customs Service. However, this form of protection proved inadequate because neither the consulate nor the record office had a legal basis to enforce compliance with its rules --- the enforcement depended on the specific legal institution that was involved, nationalities of the opposing parties, and whether their home countries had ET or not, as illustrated earlier. 
+
+In practice, this resulted in different trademark protection of Western firms against Chinese versus Japanese firms. If a trademark lawsuit was made against a Chinese business, it went to the Mixed Court in Shanghai, which had tended to enforce the protection of trademarks registered at the Customs.\footnote{For example, \cite{Heuser1975} noted that ``In case of infringement by Chinese subjects it was possible to obtain injunctions by the Chinese authorities... The British minister mentioned in a dispatch to the Foreign Office that `the Chinese Courts... as they have done in the past, afford substantial protection against imitation on the part of Chinese subjects'.''} However, if the case was against a firm who enjoyed ET, such as Japanese firms, the case was dealt with at the consular court, which tended to enforce trademark protection to a lesser extent. As noted in the \emph{Daily Consular and Trade Reports} on October 30, 1923, ``the difficulty in the matter of infringements does not generally arise among the Chinese, with whom the authorities are usually prompt to deal in cases of infringement, but with certain European and Oriental manufacturers who put on the China market merchandise which it is claimed by representatives of American manufacturers violates American trade-mark and patent rights.'' This intensified Western-Japanese tensions. 
+
+\subsection{Bilateral Commercial Treaties and Failed Negotiations}
+
+In 1902 Great Britain signed a commercial treaty with China, promising to abolish their extraterritorial rights if China were to establish its legal systems along Western lines; the foreign powers might be ``prepared to relinquish extra-territoriality when satisfied that the state of the Chinese law, the arrangements for their administration and other considerations warrant.''\footnote{See, The 1903 Treaty between the United States and China, cited in \citet[p. 36]{Alford1995}} A year later, the U.S. and Japan signed similar treaties with China. In particular, the treaties required the Chinese government to provide protection for foreign trademarks and establish offices to register trademarks.\footnote{See Article VII of the 1902 Treaty between the United Kingdom and China and Article IX of the 1903 Treaty between the United States and China.} As noted by \cite{Alford1995}, ``trademark protection was the centerpiece of the intellectual property issues addressed'' in these commercial agreements.
+
+%Under the terms of the treaties, the likin system of taxation was abolished, import duties increased to 12.5 percent ad valorem and export duties to 7.5 percent as a compensation for the tax revenue loss, and the first moves made to abolish extraterritoriality for foreign nationals.
+\begin{CJK*}{UTF8}{gbsn}
+The Qing central government, specifically, its Ministry of Commerce, responded by asking the Japanese government for help in designing a trademark law as a first step towards satisfying the conditions outlined in the treaties for abolishing ET. One difficulty was that often identical trademarks were registered by different owners in different countries, one usually being a counterfeit, and it was unclear how to decide between rival claimants \citep{Morse1918}. Japan suggested to use its first-to-file principle, which would continue to allow Japanese companies to counterfeit Western products as long as they filed the (counterfeit) trademark first, and at the same time prohibit Chinese merchants from copying Japanese products.  %The Japanese government sent two members of their Patent Bureau staff to design the Provisional Code of Trademark Registration (商标注册试办章程) in 1904 and instructed them to transfer the first-to-file principle into the Qing code.
+\end{CJK*}
+%%"Assuming that the Provisional Code of Trademark Registration would be quickly put into force, the Japanese government urged Japanese firms in China to carry out a provisional registration procedure at the Maritime Customs in Shanghai and Tianjin, where trademark bureaus had been established according to the treaties of commerce and navigation with the above three countries. If the arrangement had played out as they had hoped, Japanese firms would have ensured the legitimacy of their provisionally registered trademarks (many of which included forgeries or counterfeits), prior to the registration of the genuine trademarks of Western firms, which had been used in China from before the 1890s."
+
+Western officials and firms, led by the British, strongly opposed the plan. Due to their protests, the Qing government postponed putting the Provisional Code of Trademark Registration into force. As noted in the \cite{PatentTrademarkReview1904}, ``local merchants being dissatisfied with the measure, the British and German Ministers protested and the enforcement of the regulations was indefinitely postponed.'' In the meantime, British diplomats in China and Japan continued to discover counterfeits of Western products manufactured in Japan and exported to China via Chinese merchants. In response to the British complaints, Japanese diplomats argued that Chinese merchants initiated the counterfeit trade without Japanese firms being aware of counterfeiting, and took little actions to address the situation.
+
+The British government then attempted to sign a mutual treaty with the Japanese government, which would enable British consuls and consular courts in China and Korea to punish any Japanese firms that infringed on the intellectual property of British businesses. However, disagreements between the two governments on issues including the protection of British unregistered trademarks that had been in use in Chinese markets before 1894 ended the negotiations. For example, \cite{PatentTrademarkReview1907} wrote that ``China is being swamped with Japanese imitations, and there is no redress; England has signed with Russia, Germany, France and other powers, agreements for the reciprocal protection of trade marks in China, but Japan is unwilling to become a party to these, desiring that China should first undertake the registration of trade marks. Since it is Japanese infringements and counterfeits that are feared and not Chinese, the justice of this position is not obvious.''
+\begin{CJK*}{UTF8}{min}
+%Around the same time, Japanese industrial firms in China also suffered from trademark infringements by Chinese counterparts. In this period, foreign businesses in Shanghai relied on the trademark deposit (Cun’an 存案) system to address infringement disputes by Chinese businesses. Under the Cun’an system, when a foreign firm noticed a Chinese firm or merchant infringing their trademark, they could inform the Shanghai Daotai (道台) via the consulate of their own country and ask that a notice be issued to prohibit the imitation trademark. Once such a notice was issued, foreign firms could sue Chinese firms or merchants at the Mixed Court or Shanghai Magistrate for compensation. However, after the Xinhai Revolution in 1911 the new government decided to retire the Cun’an system and introduce its own rules and regulations.
+\end{CJK*}
+
+\begin{CJK*}{UTF8}{gbsn}
+After the Xinhai Revolution in 1911, the new government decided to introduce its own rules and regulations. The \emph{Draft of Rules and Regulations of Trademark Registration} % (中国商\end{CJK*}\begin{CJK*}{UTF8}{bsmi}標\end{CJK*}\begin{CJK*}{UTF8}{gbsn}条例草案) 
+by the new government in April 1914, however, failed again to satisfy foreign diplomats. The British government was particularly disappointed to find no provisions for protecting old trademarks of British firms that had been used in China since 1842 as the draft did not adopt the first-to-use principle as requested by the British government. The objections were shared by the U.S., French and Russian governments. Even the Japanese government was unsatisfied with the draft. %because it did not explicitly mention trademarks provisionally registered in Tianjin or Shanghai Maritime Customs or deposited at Shanghai Daotai’s office before the Xinhai Revolution. 
+Negotiations for revising the draft were, however, postponed due to the outbreak of the First World War.
+\end{CJK*}
+%In the absence of a formal law, Western and Japanese firms continued to deal with trademark infringements and requested that the Chinese government issue a notice to prohibit trademark infringements or improper uses of trademarks, a request acceded to by the Chinese government. However, as the first large anti-Japanese goods boycott took place in 1915 as a protest against the Twenty-One Demands of the Japanese government, more Japanese firms manufactured counterfeits of Western products to avoid being targeted by the anti-Japanese good boycott. 
+
+%On the front of Anglo-Japanese negotiations, Japanese government agreed to persuade the Chinese government to adopt the draft of the trademark regulations drawn up by the Japanese government, based on the first-to-use principle that the British government had proposed. Nevertheless, the Japanese government still intended to preserve the provisionally registered or deposited Japanese trademarks, many of which included similar marks or forgeries of Western trademarks in China. The British government declared to the Japanese government that it would instead treat any Japanese trademarks as non-registered trademarks under the new Chinese trademark regulations, regardless of whether they were provisionally registered with the Chinese Imperial Maritime Customs or deposited at the Shanghai district. After the declaration, the British government did not consult with the Japanese government again on the draft of the trademark regulations. 
+The British's continuing frustrations and concerns can be seen in the \emph{North China Herald} from April 22, 1922, which highlighted an earlier article by Lord Northcliffe appearing in the \emph{Daily Mail} warning the potential military threat Japan posed to China and comparing Japan’s lack of adherence to treaties to the willingness of many of its traders to infringe others' trademarks. The third attempt to establish the trademark protection system in China with cooperation between British and Japanese governments ended again in failure.
+
+\subsection{China's First Trademark Law of 1923} \label{subsec:hist_trademarklaw} 
+
+While the British and Japanese governments were negotiating over the draft of the Chinese trademark regulations, neither government anticipated the Chinese government to implement a system for trademark protection on its own. After decades of failed negotiations, China saw the only way to progress with the trademark issue (and ultimately abolish ET) in confronting the conflicting parties with a fait accompli. The Chinese Congress passed the law and put it into force on May 9, 1923, and only then informed the foreign diplomats. Chinese opted to implement a compromise between the first-to-file (favored by the Japanese) and the first-to use principle (favored by the British), in which the first-to-file principle would be adopted (after a certain notice period to the public) unless two firms applied for the same trademark, in which case the first-to-use principle would apply.  
+
+At first, the foreign governments and chambers of commerce fiercely opposed the law because of skepticism over the law's effectiveness and concerns of losing extraterritorial rights. Even in March 1924, a telegraph was published on the front page of the \emph{North China Herald} arguing that the trademark law threatened the interests of British trademark owners by ``placing the responsibility for trademark adjudication in the hands of inexperienced Chinese courts.'' However, the diplomats and businesses were soon overtaken by reality, as some groups such as Japanese businesses and German businesses who had previously lost ET status started to register their trademarks, fearing that their rivals would register the trademarks first. It became evident then the implementation of the law had become irreversible. Between 1923 and 1926, 13,647 trademarks were registered with the Chinese trademark bureau (see Table 3 in \citealp{Motono2011}). While Japanese and German businesses accounted for the vast majority of the initial trademark applications as reported in the 1924 Trademark Gazette, British firms later owned the largest share of registered trademarks (32\%) by 1926 followed by Japan (20\%), China (16\%), Germany (15\%), and the United States (12\%). As can be seen in Figure \ref{fig:trademarkschina_products}, trademarks were most frequently registered in  textiles (cotton textiles, clothing, woolen products, cotton yarns), chemicals (paints, medication, soap, cosmetics), as well as tobacco products.
+
+
+The impact of the trademark law can be seen in the advertisements of brand manufacturers. Before the trademark law, brand producers often included warnings against imitations in their newspaper advertisements. We collected all advertisements printed in the \emph{North China Herald}, the leading English-language newspapers in China at the time, and classified  advertisements against imitation if they included strings related to ``imitation'' in the advertisement.\footnote{Keywords like ``imitation'' were used in the search in the \emph{North China Herald}. We manually checked the advertisements to make sure these advertisements did in fact warn against imitations.} For example, the company ``Lea \& Perrins'' warned their consumers: ``To distinguish the original and genuine Worcestershire Sauce from the many imitations, see that the signature of LEA \& PERRINS appears in \emph{White} across the \emph{Red} label on every bottle'' -- next to a picture of their product.\footnote{In an advertisement published in the \emph{North China Herald}  on July 31, 1920.} 
+
+Figure \ref{fig:imitation} shows that the share of advertisements that include a warning against trademark infringements in all advertisements declined sharply after 1923,  from 6\% before 1923 to virtually zero by 1925. This suggests that firms saw significantly less need after 1923 to warn their consumers about counterfeits, presumably because the trademark law was effective in deterring counterfeiting. 
+
+\begin{CJK*}{UTF8}{gbsn}
+
+The Nationalist government that came into power in 1927 kept the 1923 trademark law, but offered less effective protection for foreign businesses against Chinese counterfeiters.  By 1934, 7,932 Chinese companies registered their trademarks in Shanghai, accounting for 86\% of the registered trademarks in the country  (\citealp{Motono2013}). %By 1946, Shanghai manufacturers registered more than 40,000 trademarks at the Trademark Office of the Ministry of Economy, accounting for 80 percent of the country (Shanghai日志XXX).
+\end{CJK*}
+
+%\vspace{0.5cm}
+
+%In summary, the Chinese trademark law of 1923 was born as a result of Chinese government response to the power struggle between the British and the Japanese governments, rather than the development of Chinese capitalism. %The struggle arose from the threats posed by Japanese manufacturers, which were still at the infancy of industrialization, to British firms, which had claimed initial dominance in the Chinese market. The two governments made a series of attempts and negotiations in the hope of reaching a mutual convention to protect their own firms' trademarks and interests in the absence of a formal Chinese trademark law. 
+%Due to opposing interests and different rules in foreign trademark laws and bilateral treaties with China, negotiations failed to resolve the disputes. It was the unexpected introduction of China's own first comprehensive trademark law in 1923 that eventually forced foreign governments to reluctantly accept the law, despite their dissatisfaction with the rule and skepticism about enforcement. In our analysis next, we investigate how this arguably exogenous trademark institutional shock influenced the growth and organization of firms and trade in China in the early 20th century.
+
+
+
+
+
+\section{Data} \label{sec:data}
+
+To quantify the economic impact of China's first trademark law, we digitize and construct a rich array of micro-level datasets, including a business-employee panel dataset covering the universe of firms operating in Shanghai's concession areas spanning across 1870-1940, monthly brand-level price data from Shanghai between 1923-1929,  and a cross-country trademark database from 1921.\footnote{In section \ref{subsec:trade} of the online appendix, we show additional analysis using   product-level Chinese Customs import data from 1920-1928 to examine the trade effects of the law.} %The availability of detailed information on firm activity, including its products, industries, nationality, export and import status, names and titles of non-production employees, hierarchy, and organization, in conjunction with the unique pluralistic and dynamic institutional environment of Shanghai, enables us to measure not only firm performance and organization over time but also firm-specific time-varying institutional shocks.
+
+%After the Opium War in 1840, Shanghai became one of the five open ports specified in the Nanjing Treaty. Between 1865 and 1930, trade passing through the port of Shanghai increased fourteen-fold. At the outset, merchants comprised 86 percent of an early group of 143 foreigners who set up residence in Shanghai. Since then, the number of foreign businesses rose from XXX to XXX while the number of Chinese manufacturing establishments grew from nearly zero to 2,710 in 1932 (Lee, 1993). By the 1930s, Shanghai accounted for about 40 percent of the national manufacturing output, 67 percent of FDI in manufacturing, more than half of China's foreign trade, 60 percent of cotton spindles, and 50 percent of the national electricity output (twice as much as British industries cities such as Manchester) (Ma, 2006). During the rapid industrial growth, Shanghai's population doubled from only half a million in the 1890s to over a million in the 1910s, and then tripped again to 3.5 million in the 1930s, becoming the world's 7th largest city (Ma, 2006). 
+
+%"As in other nations, factory production initially focused on textiles, food processing, and other consumer products. The growth of consumer industries spurred new private initiatives in machinery, chemicals, cement, mining, electricity, and metallurgy. Government efforts (including semiofficial Japanese activity in Manchuria) promoted the growth of mining, metallurgy, and arms manufacture (Rawski 1975; 1989, chapter 2). Foreign investors dominated the early stages of China's modern industrialization, but Chinese entrepreneurs quickly came to the fore, so that Chinese-owned companies produced 73 percent of China's 1933 factory output (Rawski 1989, page 74). In some sectors, the scale of operation became substantial: by 1935, textile mills in China produced 8 percent the world's cotton yarn (more than Germany, France, or Italy) and 2.8 percent of global cotton piece goods (ILO 1937, volume 1, page 57-58).
+
+%China's improving economic prospect attracted trade and investment. China's foreign trade rose to a peak of more than two percent of global trade flows in the late 1920s, a level that was not regained until the 1990s (Lardy 1994, page 2). Remer calculated that, between 1902 and 1931, inflows of foreign direct investment grew at an annual rate of 8.3 percent in Shanghai. By 1938, China's stock of inward foreign investment accounted to U.S. \$2.6 billion--more than any other underdeveloped region except for the Indian subcontinent and Argentina (Hou 1965, page 98)... amounts to 8.4 percent of worldwide stocks of outward foreign investment; China received 17.5 percent of out-bound foreign direct investment in that year (Twomey 2000, pp. 32, 35)--compared with 2.1 percent of inward FDI in 2001 (Velde 2006, Table 2).
+
+%Domestic investment expanded rapidly. Modern-oriented fixed investment (calculated from domestic absorption of cement, steel, and machinery) grew at an average rate of 8.1 percent during 1903-1936, outpacing Japanese gross domestic fixed capital formation in mining, manufacturing, construction, and facilitating industries, which advanced at an annual rate of 5.0 percent. Defying the effects of the Great Depression and political tumult, economy-wide gross fixed investment exceeded ten percent of aggregate output during 1931-1936 (Rawski 1989, pp 251, 261), with direct foreign investment contributing at least one-eighth and perhaps more." (Brandt, Ma and Rawki JEL 2014)
+
+%Upon arriving at Shanghai, all businesses found themselves in a completely unfamiliar business and political environment. Western and Japanese corporations had to adjust to a foreign setting characterized by extreme chaos, risk and uncertainty, and even Chinese businesses struggled as most of their owners and managers were “Shanghai sojourners” in this immigrant city from places elsewhere in China. 
+
+\subsection{Business-Employee Data in Shanghai's Concession Era}
+
+Often labeled as the ``Paris of the East,'' Shanghai had emerged by 1930 as one of the largest cities in the world and the commercial center of East Asia with over 3 million inhabitants, vibrant manufacturing and service sectors, and remarkable openness to trade, investment, and immigrants \citep{Osterhammel1989}. The decades before the 1930s marked one of the most transformative as well as turbulent periods in Shanghai's history when Shanghai grew from an unknown fishing village to one of the most prominent industrial and financial centers around the world (\citealp{Brandt2014}). Between 1865 and 1930, trade passing through the port of Shanghai increased fourteen-fold and accounted for more than half of China's foreign trade, which itself reached more than 2\% of global trade flows, a level not regained until the 1990s (\citealp{Lardy1994}). By the 1930s, Shanghai also accounted for 67\% of China's inward FDI in manufacturing, while China's total inbound FDI stock amounted to U.S. \$2.6 billion and 8.4\% of the world's total FDI--more than nearly any other underdeveloped region (\citealp{Hou1965}). Foreign businesses dominated the early stages of China's modern industrialization, but Chinese entrepreneurs eventually grew to produce 73\% of China's factory output by 1933 (\citealp{Rawski1989}). During the rapid industrial growth, the population grew from 77,000 to 3.7 million, making Shanghai the world's 7th largest city (\citealp{Ma2008}). Shanghai consisted of three areas: the International Settlement (or Public Concession), the French Concession, as well as the Chinese part of the city. The two concessions were governed by city councils independent of the Chinese government, and most foreign businesses were established in these areas.
+
+We digitized and assembled an annual business-employee-level panel dataset covering the universe of firms operating in Shanghai's concession areas spanning across 1872-1941 based on the \emph{North-China Hong List}, a business and residential directory featuring comprehensive information about firms operating in the leading port cities of northern China.\footnote{The Hong Lists from 1873, 1885, 1898, and 1900 are missing and not included in the dataset.}  This annual series was published by the \emph{North-China Daily News}, an English-language newspaper based on Shanghai that was widely regarded as the ``most influential foreign newspaper of its time.'' The Hong Lists contain detailed information about all the firms operating in both the Public and the French concessions of Shanghai.\footnote{To cross check the coverage of the data, we compared the aggregate non-production employment of foreign firms, the majority of which consisted of foreign nationals, with the size of the foreign population (including both adults and children) in Shanghai reported in the Census. The comparison suggests that the employees in our data accounted for 26\% to 41\% of foreign population in Shanghai, which we believe reflects a plausible ratio.} For each company listed in the Hong List in a given year, we recorded, among other things, its name, address, products, and importer and exporter status. In addition, we digitized each firm’s non-production employees including their names and positions within the firm. Figure \ref{fig:examplepage} below shows an example page from the 1927 Hong list.
+
+For each firm, we also identified its nationality using a number of different sources, including the ``China Importers and Exporters Directory'' published 1936 by the Bureau of Foreign Trade, Ministry of Industry, Shanghai, ``The Universal Dictionary of Foreign Business in Modern China'', a source that contains a detailed description of a firm's ownership, history, and products; the ``History of Foreign Firms'', published by the Shanghai Academy of Social Science in 1932; the ``Shanghai Dollar Dictionary 1943'', published by the Dollar Dictionary Co.; and several documents from the Japanese Chamber of Commerce. For the remaining unmatched businesses, we manually searched them to identify sources with nationality information or assigned nationality based on the language of the firm name or the countries mentioned in the firm name (if unambiguous). Our measure of the nationality of a firm is time-invariant, as we do not have information about changes in the nationality of firms over time. 
+
+Based on the data from each edition of the Hong List, we then constructed a firm-level panel dataset as well as a firm-employee-level panel dataset covering nearly the entire 1872-1941 period by matching firms over time. The richness of information from the Hong Lists and the corresponding panel that we generated offer us a unique tool to analyze firm dynamics in one of the most volatile historical periods. The key firm-level variables in the dataset include:
+
+\vspace{0.2cm}
+
+\begin{itemize}
+\item firm name: name of the firm in English, traditional Chinese, and  Wade-Giles;
+\item year and address: the year of operation and address;
+\item firm activity: text description of firm activity matched to 8 broad industry categories (denoted by $j$ in the empirical analysis below; these include: agriculture/mining, construction, manufacturing, transportation, wholesale, retail, finance/insurance/real estate, other services);
+\item products: description of specific products produced or sold by the firm, merged from the Appendix of the publications and subsequently matched to the NCL categories used in the trademark data as described below;
+\item nationality: the nationality of the firm assigned based on different separate sources as described above; 
+\item list of non-production employees including names, titles and hierarchies; we are using a count of the firm's non-production employees as a measure of employment in the empirical analysis below;
+\item export and import status: an indicator of whether the firm was listed as an exporter, importer or both;
+\item hierarchical layers: a number that enumerates the indents in the list of employees that are used to denote hierarchical layers in Hong List;
+\item Chinese nationality of employees: a count of employees that have Chinese last names;\footnote{We use a list of Chinese last names from \url{https://www.familyeducation.com/}.}
+\item job titles: we classify job titles into sales related positions (with job titles such as sales, salesman, marketing, representative, advertising, and publicity), engineering related positions (engineer, engineering, technical, machinery, draughtsman, mechanic, mechanician, and technician), and manufacturing related positions (job titles that include keywords like manufacturing, manufacturer, manufactory, production, producing, and factory).
+\end{itemize}
+
+
+%\noindent At the industry level, we construct he following outcome variables:
+
+%\begin{itemize}
+%\item firm count: the number of businesses by nationality, industry, and year;
+%\item entry: the number of new businesses by nationality, industry, year;
+%\item exits: the number of exits by nationality, industry, year;
+%\item employment count: the number of employee by business nationality, industry, and year;
+%\item share of Chinese employee: the share of Chinese employee by business nationality, industry, and year;
+%\item share of comprador: the share of businesses using comprador by business nationality, industry, and year;
+%\item share of importers: the share of exporters by business nationality, industry, and year;
+%\item share of exporters: the share of importers by business nationality, industry, and year;
+%\end{itemize}
+
+%Agents/Compradors
+
+%[1. Firms serving as agents for foreign businesses (outside China). We have not digitized this part of data.
+
+%2. The second type of agent is employee with titles such as agents or compradors in the Hong's List firms. These are salaried employee with an agent role.
+
+%3. The third type of agent is independent firms (merchants) serving as agents for firms in the Hong's List like Standard Oil and BAT. I have checked and found all of the agent firms for Standard Oil and BAT mentioned in the book in the Hong's List, but the individual agents and subagents would obviously not be in the data. Now in terms of identifying the link between these agent firms and foreign corporations (i.e., BAT), it becomes tricky. Some of these agent firms shared the same managers as the foreign corporations they represented such as BAT's agent (and joint venture/subsidiary) - Union Commercial. BAT's other agent was an independent firm Wing Tai Co. which did not overlap with BAT at all.
+
+%To check whether the trademark law affected the Chinese merchants, we can look at both merchants with foreign manager links (which we have information for) and Chinese merchants carrying the same products.]
+
+%\subsection{Bilateral Product Trade Data} %Trade data
+
+%In addition to the firm panel data, we also compile bilateral product-level import data between China and the world for the period of 1920 to 1928.\footnote{We are grateful to Robert Bickers, Hans van den Ven, and their team for sharing with us their digitized data covering a large share of the final trade dataset.} The source for the import data  is the annual series ``Foreign Trade of China'' published by the \emph{Statistical Department of the Inspectorate General of Customs}. For each source country  and year, the data report the quantity and value of Chinese imports in a given product.
+
+%We harmonize countries and products over time, resulting in data for 40 countries and 246 harmonized product categories and covering all years between 1920 and 1928. Harmonizing products over time is challenging, as the product classification system changed significantly in 1925. We harmonize products based on the description of product categories, and verify our matches using the publication in 1925 that also provided import data for the previous years 1924 and 1923 under the new classification. Overall, we are able to match 91\% of trade data in terms of imports value in 1924 either exactly over time (35\%) or closely (56\%) with deviations of less than 1\% of trade value in either product classification in both 1923 and 1924).\footnote{As sometimes errors in the trade data from previous years are updated in later publications, it is not entirely clear whether mismatches are due to mistakes in product assignment, or correction of previous mistakes in the official trade data.}  In our analysis we focus on the products that we can exactly match over time, and show robustness checks that include the remaining product categories.
+
+\subsection{Price Data} \label{subsec:prices}
+
+%LA: SHOULDNT PRICE DATA COME AFTER TRADEMARK DATA?
+
+In addition, we obtain detailed product- and brand-level price panel data by digitizing  issues of \emph{The Shanghai Market Prices Report}, published quarterly by the Ministry of Finance, Bureau of Markets, in Shanghai. More specifically, we digitized the \emph{Wholesale Prices of Commodities at Shanghai} or \emph{The Table of Wholesale Prices in Shanghai} (in later issues) which  reported monthly price series starting in April 1923, and were used to compute price indices for Shanghai. Overall, we collected monthly price series for the period of April 1923 to December 1929.
+
+The products reported are from eight product categories: cereals, other food products, textiles, metals, fuels, building materials, industrial materials, and sundries. Each product is ``affixed with its trade mark, brand and, in some cases, the name of the company'' (The Shanghai Market Prices Report, April-June 1924, p. 2). The products recorded expand over time, but we only consider products consistently reported between June 1923 (as there were some missing prices before this date) and December 1929, yielding 117 products. Out of these, 39 listed at least one brand name (instead of a generic, though narrow, product description), and we use this subset for our analysis further below.\footnote{In some instances, product prices were missing for specific months. In order to generate a fully balanced panel necessary for the method suggested by \citet{CallawaySantAnna2020}, we replaced the missing data with the prices from the previous period. } The market price reports also indicate the country origin of the manufacturer in most cases, which we classified into Western, Japanese and Chinese brands. 
+
+We then manually searched all the brands listed in the price reports in the trademark registries of China, called \emph{Shangbiao Gongbao} (\begin{CJK*}{UTF8}{gbsn}商标公报\end{CJK*})  (we located all the volumes until December 1927 except for the first one). We were able to find trademark registrations for 28 products in this time period.%\footnote{Notice that it is in principle possible to look up firm names in the trademark registries, but because we have not digitized the latter yet, we do not currently have this information.}
+
+\subsection{Trademark Data}
+
+To measure firms' heterogeneous dependence on trademark protection, we obtain historical trademark data from the \href{https://www3.wipo.int/branddb/en/}{IP Portal} of the World Intellectual Property Organization (WIPO). While WIPO in principle  holds  trademark data for 141 countries, after dropping countries with no or very sparse trademarks in the late 19th and early 20th century, we end up with trademark data for eight countries:  Britain, Germany, US, Japan, Australia, Canada, Denmark and Spain.\footnote{We also dropped New Zealand, as its product classification scheme is inconsistent with the NCL classification.} The dataset lists the name of the trademark, the name of the trademark holder, the number of the trademark, the application date, and the product group(s) that the trademark is registered for.  Product groups are defined according to the international \emph{Nice classification (NCL)} scheme that was established by the Nice Agreement in 1957.\footnote{For details, see \url{https://www.wipo.int/classifications/nice/en/} (accessed 1/20/2021).} 
+
+For each country, we calculate the cumulative sum of all trademarks registered between 1872 and 1922, the year before the enactment of the trademark law.\footnote{Before 1872, only a handful of trademarks were reported on Jan 1, 1801, and hence excluded in our data.} We then aggregate the trademarks across the eight countries, yielding a total of 50,050 registered trademarks by 1922. For each NCL product category $p$, we then calculate its share in total trademarks, labelling this $trademarkintensity_p$.\footnote{Registration of trademarks for services was not possible in this time period. Nevertheless, some service trademarks appeared in the data. We drop these trademarks and use a measure of 0 trademarks for all services that appear in the Hong List data.}
+
+As can be seen in Table \ref{tab:trademarkintensity}, the product categories with the highest trademark intensity are pharmaceuticals, cosmetics, food, alcoholic beverages,  chemical products, paper and cardboard, and tobacco. Services have a trademark intensity of zero, as it was not possible to register trademarks for them. Among the goods with the lowest trademark intensities were firearms, canvas, musical instruments, leather products or dressmakers' articles.  
+
+To compute a firm-specific measure of trademark intensity, We match the product-level trademark intensity to products sold by each firm prior to 1923 and use the maximum trademark intensity across the firm's products: 
+
+\begin{equation*}
+Trademark Intensity_i \coloneqq \max_{p \in P_i} \left( TrademarkIntensity_p \right)    
+\end{equation*}
+ where $P_i $ denotes the set of products that the firm sold in the period 1920 to 1922, i.e., before the trademark law. The firm-specific trademark intensity enables us to explore cross-firm variations in demand for trademark protection and examine the heterogeneous effect of the trademark law at the firm level. 
+
+%LA: Do we want to mention that other data is explained in the appendix? (the import data for example).
+
+
+\subsection{The Trends and Compositions of Shanghai Firms}
+
+In this subsection, we describe the time trends and distributions of the firms in Shanghai documented in our data, starting with the growth in the number and size of businesses. After the forced opening of the Shanghai port, the city witnessed a tremendous growth in the number of foreign businesses. Consistent with the aggregate accounts of that period, Figure \ref{fig:yeartrend} shows that the number of business grew rapidly starting in the 1920s and rose from 771 to 1,624 in 1920-1930 alone. The total employment recorded in our data also grew over time as shown in Figure \ref{fig:yeartrend}, rising from about 5,000 in 1920 to 13,000 in 1930. Some particularly notable examples of foreign corporations include British American Tobacco (BAT), Standard Oil, and Mistui Trading Company. As shown in Figure \ref{fig:BAT}, BAT, formerly named British Cigarettes, consisted of about 25 main employees and a relatively simple organization structure as of 1906; two decades later, BAT's operations in Shanghai expanded to over 100 main employees and 9 departments (such as accounting, advertising, legal and traffic). 
+
+During this period, Shanghai's economy also experienced a significant industrial transformation, transitioning from an economy primarily dominated by wholesale and merchants to a more diverse economic landscape with a mix of manufacturing and services. As shown in Figure \ref{fig:indcomposition}, the manufacturing sector grew from only 6.2\% of the economy (measured in non-production employment) to 20\% by 1930 as both foreign and Chinese businesses set up factories in Shanghai.
+
+The nationality composition of the businesses also varied significantly over time. Across country origins, Great Britain initially accounted for 50.5\% of the businesses in the data as Figure \ref{fig:ctrycomposition} shows, but the share fell significantly over time reaching 20\% by 1930 while the shares of Japanese and Chinese companies grew from 2.1\% to 10.4\% and from 3.3\% to over 20\%, respectively, by 1930. Other important firm nationalities in Shanghai were the United States, France, Germany, and Russia, which accounted for 18.3\%, 5.7\%, 4.7\%, and 2.1\% of the businesses, respectively, by 1930. %When grouping industries based on their pre-1922 trademark intensity levels in Figure \ref{fig:ctrycompositionbytrademark}, we notice that British dominance was particularly pronounced in industries with relatively high trademark dependence. Prior to 1922, British businesses claimed about 50\% of the employment in industries with above 75th percentile trademark intensity; that share rose to an average of 60\% after 1923. 
+
+
+
+
+\section{Empirical Evidence: Firm Responses to Trademark Protection} \label{sec:empirical_evidence}
+
+In this section, we examine how Western, Japanese and Chinese firms, with their distinct roles in the trademark conflicts, respectively responded to the trademark law. The establishment of the trademark law, by protecting authentic producers against ``competition'' from counterfeits, could shape firm growth and organization in complex ways. First, the trademark law can lead to a direct reallocation of markets from counterfeiters to authentic producers. Second, by addressing information asymmetry, trademark protection may raise aggregate consumer demand as consumers gain confidence in their probability of receiving authentic, rather than counterfeited, products upon purchase. However, unlike patents and copyrights, trademarks protect the rights to use a mark, rather than the rights to make or sell (sometimes similar) products with different marks, and cannot prohibit original counterfeiters from obtaining new marks and competing as new varieties. As a result, while trademark protection should help authentic producers capture their brand-specific markets, it may exert ambiguous effects on market structure and prices.
+
+Taking advantage of detailed firm-level data, we first examine the effects of the trademark law on different margins of firm growth and market reallocation between the two sides of trademark disputes. After assessing separate implications for Western, Japanese and Chinese firms, we then explore the interactions between foreign and domestic firms; in particular, whether the trademark law affected domestic integration decisions of Western firms, both within and across the boundary of the firm, where increased linkages may serve as potential channels of spillover to the Chinese economy. Next we investigate the effect of trademark protection on brand-level prices to understand the potential impact of the law on consumers.  %In the last part of the empirical analysis, we compare the effect of the 1923 trademark law to those of alternative attempts foreign powers made to protect their trademarks and investigate their relative effectiveness in fostering firm growth.
+
+
+%I think some sense of hypothesis may still be needed if model is at the end. Although I see they are blended in the discussion of each section. 
+
+\subsection{Empirical Strategy}
+
+To examine the firm effects of the trademark law, we estimate a difference-in-differences specification on the sample of pre-existing firms in Shanghai (i.e., firms that we observe in at least one of the years 1920-1922), comparing the outcome of firms that sell trademark-intensive products with firms that sell less trademark-intensive products before and after the trademark law of 1923:
+\begin{equation} \label{eqn:firm_regression}
+    y_{ict} = \beta_0 + \beta_1*TrademarkInt_{i}*PostLaw_t + FE_{i} + FE_{ct} + FE_{jt}  + \epsilon_{ict} 
+\end{equation}
+
+\noindent where $y_{ict}$ is a firm-specific outcome such as the log employment for a given firm $i$ from country $c$ in year $t$,  $TrademarkInt_{i}$ is a firm-specific measure of trademark intensity based on the firm's product composition in 1920-1922 and each product's trademark intensity (calculated based on a group of countries outside of China as discussed in Section \ref{sec:data}), $PostLaw_t$ is a dummy that equals 1 if the year is equal to or after 1923, $FE_{i}$ denote firm fixed effects, $FE_{ct}$ denote country-year specific fixed effects that are included to absorb potential macroeconomic shocks from the home countries of the  firms, and $FE_{jt}$ denote broad industry-year specific fixed effects that are included to account for structural change across broad sectors in Shanghai. Standard errors are two-way clustered by product category and country-year.  In our baseline regressions, we center on the period of 1920-1926 to compare firm outcomes in a focused time window and mitigate the effects of other historical shocks, such as the establishment of the Nationalist government. Table \ref{tab:summarystat} in the online appendix presents the summary statistics for this regression sample. 
+
+In order for our identification strategy to work, it is important to make sure that  trademark-intensive firms would not have grown even in the absence of the trademark law, i.e., there are no pre-trends. To ensure that, we also implement an event study specification:
+\begin{equation} \label{eqn:firm_eventstudy}
+    y_{ict} = \beta_0 + \sum_{t=1920}^{1926} \beta_t*TrademarkInt_{i} + FE_{i}  + FE_{ct} + FE_{jt} + \epsilon_{ict} 
+\end{equation}
+Examining the elasticity of trademark intensity before and after 1923 will help detect the presence of  pre-trends in our data.
+
+
+
+\subsection{Firm Growth and Reallocation}
+
+We start by examining the effects of the trademark law on  firm employment and organization. As the main complainants of trademark infringements, Western firms are expected to benefit from reduced counterfeiting activity within its own market segment. However, the benefit can be mitigated when previous counterfeiters establish their own brands and compete as ``new'' varieties. On the other side of trademark conflicts, the effect of the trademark law on Japanese and Chinese firms is expected to be the contrary. If the trademark law led to a reallocation of market share from authentic producers to counterfeiters, one would expect the latter group to contract. However, the trademark law would not prevent previous counterfeiters from supplying a lower-quality consumer segment with their own registered brands to offset the direct negative effect.
+
+\subsubsection{Within-Firm Employment Growth and Organizational Change}
+
+
+%To examine the growth effect of the trademark law, we estimate a difference-in-differences specification on the sample of pre-existing Western firms in Shanghai (i.e., firms that we observe in at least one of the years 1920-1922), comparing the outcome of Western firms that sell trademark-intensive products with firms that sell less trademark-intensive products before and after the trademark law of 1923:
+%\begin{equation} \label{eqn:firm_regression}
+    %y_{ict} = \beta_0 + \beta_1*TrademarkInt_{i}*PostLaw_t + FE_{i} + FE_{ct} + FE_{jt}  + \epsilon_{ict} 
+%\end{equation}
+
+%\noindent where $y_{ict}$ is a firm-specific outcome such as the log employment for a given firm $i$ from country $c$ in year $t$,  $TrademarkInt_{i}$ is a firm-specific measure of trademark intensity based on the firm's product composition in 1920-1922 and each product's trademark intensity (calculated based on a group of countries outside of China as discussed in Section \ref{sec:data}), $PostLaw_t$ is a dummy that equals 1 if the year is equal to or after 1923, $FE_{i}$ denote firm fixed effects, $FE_{ct}$ denote country-year specific fixed effects that are included to absorb potential macroeconomic shocks from the home countries of the Western firms, and $FE_{jt}$ denote broad industry-year specific fixed effects that are included to account for structural change across broad sectors in Shanghai. Standard errors are two-way clustered by product category and country-year.  In our baseline regressions, we center on the period of 1920-1926 to compare firm outcomes in a focused time window and mitigate the effects of other historical shocks, such as the establishment of the Nationalist government. 
+
+%\vspace{0.2cm}
+%\noindent \textbf{Within-Firm Employment Growth and Organization Change}
+%\vspace{0.2cm}
+
+In Table \ref{tab:baseline}, we show that the trademark law exerted a net positive effect on the growth of trademark-intensive Western firms.  %Western firms that were selling more trademark-intensive products grew significantly after the trademark law was established in 1923. %Column (1) shows the specification with year fixed effects, column (2) allows for country-specific year fixed effects, and column (3) is our preferred, most stringent specification that includes broad industry times year fixed effects.
+Based on column (3), our preferred specification that includes broad industry times year fixed effects, the employment of Western firms with mean trademark intensity grew by  4.6\% after the enactment of the law. This implies on average adding a 1/2 employee at the mean employment of 11.2. However, for firms selling the ten most trademark-intensive products listed in Table \ref{tab:trademarkintensity}, the employment growth ranged from 7.8\% to 19.2\% (adding 1-2 employees to the mean firm size). In contrast, firms selling the ten least trademark-intensive products listed in Table \ref{tab:trademarkintensity} saw only a 1.3-3.5\% employment growth. \footnote{As we show in Figure \ref{fig:westerntertile} of the online appendix, the effect of the trademark law was not uniform across the size distribution of firms with the effects concentrated on large and medium-sized businesses.} %As depicted in Figure \ref{fig:westerntertile}, the associated employment growth can be found for large and medium-sized businesses but not in small businesses. 
+
+In contrast to the growth of Western firms, trademark-intensive Japanese firms  experienced a significant contraction in their employment after 1923. In terms of magnitude, the employment of Japanese firms with mean trademark intensity decreased by  15\% after the enactment of the law. The effect on Chinese firms is similarly negative but mostly statistically insignificant.\footnote{In section \ref{subsec:trade} of the Online Appendix, we show that these effects were also mirrored in Chinese imports. The trademark law led to increased Chinese imports and new trade relationships from Western countries in trademark intensive products. In contrast, imports from Japan fell, though the effect is not statistically significant.}
+
+
+To ensure the results are not driven by pre-trends, we estimate equation \eqref{eqn:firm_eventstudy} for the three types of firms. As shown in Figure \ref{fig:westernevent}, no pre-trends are present for Western firms: the estimated employment elasticities of trademark intensity before 1923 are not significantly different from zero, while the effect partially appears in 1923 and then fully in 1924 and after. Figure \ref{fig:chinaevent} shows the corresponding event study for Chinese firms, confirming the absence of pre-trends and the negative effect of the trademark law. The event study for Japanese firms in Figure  \ref{fig:japanevent}  is noisier as we do not have as many Japanese firms in the sample, but still shows a decline in employment. Overall, these results suggest that after years of Anglo-Japanese trademark conflicts, the enactment of China's first trademark law enabled Western firms to grow their trademark-intensive operations in China while disadvantaging Japanese and Chinese businesses.
+
+%While the event study is reassuring, we conduct several robustness checks in Table \ref{tab:baseline}. Column (4) extends the sample period to 1930 and includes the period after 1927 when the Nationalist government came into power who kept the 1923 trademark law, and we find the effects to be similar (with a slightly larger magnitude). The remaining columns of Table \ref{tab:baseline} use alternative measures of trademark intensity. Column (5) excludes Japan in the calculation of the trademark intensity, as Japanese companies may have registered trademarks in different product categories that were irrelevant for Western firms. Indeed, our estimated effect increases and becomes more significant if we exclude Japan. In column (6) we use the trademark intensity of each firm's home country (and the aggregate measure if we do not have trademark registration data for a given country). While this measure may be susceptible to endogeneity concerns and  is therefore not our preferred measure, the results are robust. Finally, in column (7) we divide US trademark intensity by the size of a product group as measured by total employment in this product group in the US.\footnote{We are grateful to Dave Donaldson, James Lee, and Rick Hornbeck for sharing the digitized census data with us. The US was the only country for which we were able to get employment data for very detailed industries that enabled us to match them to NCL product categories. Notice, however, that the US manufacturing census does not include the service sector. The normalized trademark intensity is therefore not defined for the service sector, which explains the reduced sample size.} While this rescales the trademark intensity variable using employment, our results are robust to this alternative measure.\footnote{As an additional check, in the online appendix we drop services from the analysis. Many of the firms in our sample sell both goods and services; this exercise drops firms that sell only services. The magnitude of the effects are larger when considering goods only, and are statistically significant in most specifications.} 
+
+Next we examine whether the positive effect of the trademark law on Western firm employment indeed reflects firms' varying dependence on trademark protection rather than other firm or product attributes. While we are not aware of other major shocks in China during 1923, we want to ensure that we are measuring the effect of the trademark law on firms that are ex ante most dependent on trademark protection, i.e., the trademark-intensive firms. To check this, we interact the post-law dummy with other firm or product specific characteristics. For example, firms in trademark-intensive products may also be innovation intensive. For this reason, we control for an interaction of the post-law dummy with a firm-specific measure of patent intensity in column (2) of Table \ref{tab:robustness}. We calculate patent intensity for each product as the share of patents in each product category based on data on the stock of US patents in 1922 from the historical USPTO database.\footnote{See \url{https://www.uspto.gov/learning-and-resources/electronic-data-products/historical-patent-data-files}. Similar to trademark intensity, we use the maximum patent intensity across products for each firm.} Trademark and patent intensity are found to be only weakly correlated, and our employment effect is not explained by patent intensity. 
+
+In columns (3)-(5) of Table \ref{tab:robustness} we check whether the estimated effect on trademark-intensive industries may instead reflect  an effect on large industries or firms, as the trademark law may be particularly relevant for large (or small) industries and firms. To test this, we interact the post law dummy with the number of firms or the total employment of firms in each NCL product category and firm initial size, respectively.\footnote{We use the number of unique firms that offer the product in at least one of the years between 1920 and 1922. In order to create a firm-specific measure, we again use the maximum size across all products a firm produces.} Again, none of these size measures explain away the employment effect of trademark intensity. Finally, we show in column (6) the estimated effects are also not due to general macroeconomic shocks in home countries that had affected trademark-intensive firms differentially.\footnote{Note that we already control for general macro-economic shocks in the home countries by including country-year specific fixed effects; here we are allowing these shocks to affect firms differentially.}$^{,}$ \footnote{In the online appendix, we conduct a different set of robustness checks and test whether excluding potential interest groups, namely, specific countries, products, or firms that were expected to benefit particularly from the trademark law would affect our results. These groups include, for example, German firms, who lost extraterritoriality at the end of World War I and as a result would arguably have more interests in a domestic trademark law in China, and firms in the tobacco industry (or the largest tobacco manufacturer), who were particularly affected by trademark infringements.  The analysis shows that excluding these potential interest groups does not affect our estimated effect of the trademark law on Western firm growth.  Furthermore, we show in the online appendix that neither a specific country nor a specific product group is driving the results.} 
+
+%Finally, in column (5) of Table \ref{tab:baseline} we check whether firms that were more trademark intensive came from countries that experienced a macro-economic shock that had affected trademark-intensive firms differentially. Note that this is a very demanding specification, as we already control for general macro-economic shocks in the home countries by including country-year specific fixed effects; here we are allowing these shocks to affect firms differentially. Again, our results remain robust to this specification.
+
+
+%In Table \ref{tab:exclgroups} we conduct a different set of robustness checks and test whether excluding certain interest groups, namely, specific countries, products, or firms that were expected to benefit particularly from the trademark law, would affect our results. For example,  German firms lost extraterritoriality at the end of World War I and as a result would arguably have more interests in a domestic trademark law in China. We drop German firms in column (2) and find the results remain unaffected. Relatedly, among the different products, cigarettes were a product that was particularly affected by trademark infringements.\footnote{This is highlighted in \cite{Motono2011}, and also reflected in the data on advertisements that we describe in Section \ref{subsec:hist_trademarklaw}.} At the same time, the cigarette industry was heavily concentrated, with \emph{British American Tobacco (BAT)} being one of the big players. Big business groups could in principle have been lobbying for the introduction of the trademark law, thereby potentially violating the exogeneity assumption. While this seems unlikely given the historical context described in Section \ref{subsec:hist_trademarklaw}, we drop BAT in column (3) and the entire tobacco industry in column (4). The analysis shows that this does not affect our estimated effect of the trademark law, either.\footnote{In Figures \ref{fig:dropcountry} and \ref{fig:dropproduct} of the online appendix we also show that neither a specific country nor a specific product group is driving the results; the results are very similar in magnitude and mostly significant when we drop a country or product group at a time. } 
+
+
+After establishing the effect on firm employment growth, we next explore in more detail how Western firms grew their organizations in response to the trademark law by taking advantage of information on the job titles of employees. As we do not have job titles for all firms in our sample, column (1) of Table \ref{tab:position_titles} first repeats our baseline analysis on this subsample to confirm that the trademark law has a growth effect on this sample. In columns (2) to (4) we examine specific positions in firms and their decisions to employ a lawyer, sales staff, and engineers, respectively. We see that after the trademark law, Western firms were more likely to employ all of these positions, but the effect is only statistically significant for engineers. While only suggestive, this could indicate that Western firms that started by importing goods produced in their home countries became more likely to start their own manufacturing activities after the trademark law --- a trend that was also visible in the aggregate statistics of Shanghai in Figure \ref{fig:indcomposition}. 
+
+%To explore this idea further, in Table \ref{tab:agents_and_manufacturers_western} we interact the main regressor with dummies that indicate whether the firms acted as agents, merchants or manufacturers  in any of the years before the trademark law. Agents were firms that imported goods produced by specific foreign firms, sometimes exclusively (i.e., they acted as sales representatives of foreign firms); merchants directly imported from foreign firms and sold an assortment of goods that may vary from one another and over time. Many firms in our sample had multiple of these roles. Table \ref{tab:agents_and_manufacturers_western} shows that growth came mainly from agents and manufacturers. The latter result suggests that it is possible that the trademark law contributed to Shanghai's transition from a trade port to a more diverse, manufacturing economy by encouraging Western firms to grow and start production in Shanghai, rather than only importing products from abroad.
+
+%\vspace{0.2cm}
+%\noindent \textbf{Entry, Exit and Product Composition}
+%\vspace{0.2cm}
+
+\subsubsection{Entry, Exit, and Product Composition}
+
+Up to now we have studied the intensive margin, i.e., whether the trademark law affected the growth of existing firms. Next we examine the extensive margins of growth by extending the sample from firms that had existed in 1920-1922 to all firms that appeared between 1920 and 1926. We fully balance the sample between 1920-1926 and define an entry dummy as 1 in and after the year a firm entered, and an exit dummy variable as 1 in and after the year a firm exited. This allows us to examine how the law  affected the entry and exit rates of firms. In columns (1) and (2) of Table \ref{tab:extensivemargin_all} we see that while the trademark law had an insignificant effect on the entry of Western firms, it exerted a negative and significant effect on the exits of Western firms. Overall, in column (3) we combine entry and exit and see that the trademark law led to a positive but insignificant effect on firm existence. This suggests that the trademark law protected incumbent firms, while not necessarily leading to increased firm entry. 
+
+The trademark law could also affect firms' product composition, especially the likelihood of adding and dropping trademark-intensive products. To examine this hypothesis, in columns (4) and (5) of Table \ref{tab:extensivemargin_all} we return to the sample of firms that existed in 1920-1922 and create a dummy variable to denote firms that added or dropped a trademark-intensive product in a a given year.\footnote{Trademark-intensive products here are defined as products with above median trademark intensity.}  The results are similar to the firm entry and exit analysis, suggesting that Western firms were significantly less likely to drop products with above-median trademark intensity after 1923, but not more likely to add them. 
+
+Turning to the extensive margin for Japanese and Chinese firms, we see that Japanese were less likely to enter while Chinese firms were less likely to exit. In addition, Japanese firms were significantly more likely to add trademark-intensive products whereas there were no significant changes in the product portfolio of Chinese firms, .
+
+
+\subsubsection{Advertising Investment}
+
+If the trademark law helped incumbent Western firms to grow their trademark-intensive products, we may also see increased investment incentives in, for example, brand promotion, as Western firms experienced a larger return from this after the trademark law. Prior to the trademark law, the return from advertising faced a free-rider problem: any increase in market demand through brand promotion efforts would be shared by counterfeiters. This externality lowers brand producers' incentives to invest in advertising. The free-rider problem would be mitigated after the enactment of the trademark law; with reduced counterfeits in the market, brand producers would have greater motives to pay for brand promotion. At the same time, however, the need of advertising the brand to educate consumers and ensure they are able to distinguish the authentic brand from counterfeits may also decrease with strengthened trademark protection, leading to an ambiguous net effect on advertising investments.
+
+In order to check which of the two effects dominates in the data, we downloaded all advertisements posted by firms in our sample in the leading daily Chinese newspaper \emph{Shen Bao} (\begin{CJK*}{UTF8}{gbsn}申报\end{CJK*})  during 1920-1926. Column (1) of Table \ref{tab:ads_china_japan} reports that while the increase in the likelihood of advertising was not statistically significant for Western firms, the number of advertising days in columns (2) and (3), alternatively measured as log(ads+1) or the inverse hyperbolic sine of ads, rose significantly after 1923 for Western businesses. Interestingly, we also find a higher probability to post advertisements for Japanese firms. This result offers suggestive evidence that Japanese firms reacted to the trademark law by trying to build up their own brands and invest in brand promotion.\footnote{In  section \ref{appsec:qualityads} of the online appendix, we check whether trademark protection may have exerted an effect on product quality by studying whether there had been changes in advertisements focusing on product quality. We do not find a significant effect.} 
+
+
+
+
+
+\subsection{Domestic Integration}
+
+Case studies of specific companies \citep{Cochran2000} suggest that foreign businesses in Shanghai also adapted their domestic integration decisions in response to the changes in the economic and institutional context of Shanghai. Confronted with extensive obstacles such as language barriers and inland market access restrictions, many Western businesses, such as Standard Oil and BAT, had to rely heavily on Chinese nationals as sales agents or commercial managers or worked directly with Chinese merchants to explore their social networks. At the same time, however, Western businesses could not establish a strong trust-based relationship with their domestic employees or merchants in the absence of formal legal institutions such as the trademark law.  How did the establishment of the trademark law alter the integration of Western firms with domestic employees and their links to Chinese merchants? 
+
+To understand how the trademark law affected the integration of Chinese employees in Western firms, we use the employee-level information of the Hong List and construct several variables to capture a firm's internal domestic integration. First, we separately identify Chinese employees from foreign employees based on the names of the employees reported in the Hong List. Second, we explore the position of Chinese employees in the organizational hierarchy by exploiting the indents in the employee directory as reported in the Hong List, where lower-level employees were separated from their superiors by an indent. More specifically, we check whether Chinese employees appeared in the first organizational layer, which we label as the managerial layer, and also calculate the average position of Chinese employees in a Western company's employment hierarchy. Finally, we check whether Chinese employees appeared in positions related to sales (i.e., job titles related to sales, marketing, and advertising), engineering (i.e., job titles related to engineering positions), and manufacturing (i.e., job titles related to production). 
+
+Table \ref{tab:chinese_employees} reports the results. We find Western firms with trademark-intensive products expanded their employment after the trademark law by hiring Chinese employees (columns 2 and 3). Chinese employees were also more likely to appear in the managerial layer (column 4), and in general move up in the organizational hierarchy (column 5; a negative sign means a higher layer, as the layers are numbered from 1 (highest) to 3 (lowest).). With respect to positions, Chinese employees were more likely to be hired in sales related positions, as opposed to engineering or production related positions (columns 6-8). These results suggest that Western businesses  became more inclined to promote Chinese employees after the enactment of the trademark law, especially with respect to managerial and sales tasks.
+
+Apart from setting up a foreign-owned subsidiary in a treaty port like Shanghai, a common alternative strategy to enter the Chinese market  was through agents located in China. However, before the trademark law Western firms may have found it risky to use Chinese agents with the concern that Chinese merchants might mix their branded products with counterfeits, thereby undermining the brand value \citep{Motono2011}. We test whether Western companies became more likely to enter the Chinese market via Chinese agents after the trademark law by exploiting the list of clients that agents provided in the Hong List. In Table \ref{tab:agents} we find that Chinese firms selling trademark-intensive products were more likely to act as agents for foreign firms after the trademark law, and that their number of clients increased significantly. In contrast, Western and Japanese firms did not experience significant changes in their numbers of clients.  
+
+This suggests that there may be heterogeneity in the effect of the trademark law on Chinese firms: those that acted as agents for foreign firms grew, while others shrank. We check this in Table \ref{tab:agents_and_manufacturers_china} by estimating whether Chinese agents, merchants, or manufacturers experienced similar growth (many firms were present in more than one broad industry so the categorization is not exclusive). Indeed we see that Chinese firms that acted as agents for Western firms exhibited strong growth, rather than contraction. Chinese manufacturers also grew, while the negative effect is mostly based on other, for example retail, businesses. 
+
+%LA: AN EXTRA $ HERE. NOT SURE IF SOMEONE WAS TRYING TO BLOCK IT AND PUT $ INSTEAD OF % But the table does not compile.
+% We then look at the extensive margin of entry in Table \ref{tab:entry_agents} on a fully balanced sample where the dependent variable is a dummy that equals 1 after a firm enters as an agent, merchant or manufacturer. The analysis documents a significant increase in the entry of Western and particularly Chinese agents and merchants after the trademark law, and significantly less entry of Japanese manufacturers.
+
+
+\subsection{Prices} \label{subsec:results_prices}
+
+So far we have documented an expansion of Western firms at the expense of Japanese businesses and increased linkages between Western clients and Chinese agents. Next, we examine how the trademark law might have influenced prices, another important outcome to not only businesses but also consumers. Ex ante, trademark protection may exert an ambiguous net effect on prices. Prices might rise if authentic producers gain additional market power as they increase market share or if consumer demand increases due to the lower risk of ending up with the less preferred counterfeits. However, the contrary may also occur if, for example, authentic producers improve economies of scale thanks to an expanded market share or lower product quality as they feel less need to distinguish themselves from counterfeiters.
+
+Since the price data  is only available from April 1923 (see subsection  \ref{subsec:prices}), one month before the trademark law was announced, we need to undertake a different identification strategy from the one used earlier. Specifically, we manually check the Chinese trademark registry to identify when (or if) a given brand became registered, and implement a staggered differences-in-differences estimation. Since gradual adjustment of prices can bias the coefficients in the standard OLS estimation, we estimate the average effect on the treated (ATT) using the method introduced in \cite{CallawaySantAnna2020} as our preferred method. 
+
+Table \ref{tab:price_regression} presents the results. Column (1) uses the potentially biased OLS, which shows a positive but insignificant effect on prices after trademark registration. In column (2) we report the ATT estimated using \cite{CallawaySantAnna2020}'s method, which is slightly negative but insignificant. In columns (3) and (4) we repeat the analysis on the sample of Western products, and the negative effect becomes stronger, but is still insignificant.
+
+Before we can trust the estimates, we again need to check for pre-trends. Figure  \ref{fig:priceevent} shows that  log prices in the months before a trademark gets registered were stable, and declined upon registration, stabilizing  after about 8 months. We also formally test for pre-trends using the method described in \citep{CallawaySantAnna2020}, and find no evidence for them. Overall, we find no evidence of authentic producers raising prices as a result of trademark registrations; if anything, they fell.
+
+\section{Quantifying the Aggregate Impact of Trademark Protection}
+\label{sec:model}
+
+In this section, we develop a stylized model featuring heterogeneous authentic and counterfeiting producers to estimate the effects of trademark protection on economic outcomes.
+
+\subsection{Setup}
+
+We start with the case in which the economy has no trademark protection. There are two types of firms, authentic producers and counterfeiters. Each authentic producer sells a product $j$ with quality $b_{j}$. The true quality is known to the producer, but consumers are unable to verify the true quality of the product upon purchase. In the absence of trademark protection, consumers are assumed to encounter counterfeits in each variety with a probability of $s$. The counterfeits have a discounted quality compared to the authentic product, denoted as $\rho b_{j}$, where $0< \rho < 1$.
+
+\subsubsection{Consumer Demand}
+
+Consumers have a utility function with a constant elasticity of substitution (CES) ($\sigma>1)$ over a set of varieties $\varOmega$. Given the
+presence of counterfeits, the consumer's expected utility is given by:
+\begin{equation}
+E(U)=(1-s)\left(\int_{j\text{\ensuremath{\in}}\varOmega}b_{j}q_{j}^{\frac{\sigma-1}{\sigma}}dj\right)^{\frac{\sigma}{\sigma-1}}+s\left(\int_{j\text{\ensuremath{\in}}\varOmega}\rho b_{j}q_{j}^{\frac{\sigma-1}{\sigma}}dj\right)^{\frac{\sigma}{\sigma-1}}
+\end{equation}
+where $q_{j}$ denotes the quantity of variety $j$ consumed. This utility function can be simplified to:
+\begin{equation}
+E(U)=\lambda\left(\int_{j\text{\ensuremath{\in}}\varOmega}b_{j}q_{j}^{\frac{\sigma-1}{\sigma}}dj\right)^{\frac{\sigma}{\sigma-1}}
+\end{equation}
+where $\lambda\equiv(1-s)+s\rho^{\frac{\sigma}{\sigma-1}} < 1$ iff $s>0$. 
+
+Maximizing the utility function subject to the budget constraint $\int p_j q_j dj \leq I $ yields the demand function for each variety $j$:
+\begin{equation}
+q_{j}=\left(\frac{p_{j}}{Pb_{j}}\right)^{-\sigma}Q
+\end{equation}
+where $p_{j}$ is the price of variety $j$, $P\equiv\left(\int_{j\text{\ensuremath{\in}}\varOmega}b_{j}^{\sigma}p_{j}^{1-\sigma}dj\right)^{\frac{1}{1-\sigma}}$
+is the aggregate, quality adjusted price index, and $Q$ is aggregate demand with $I = QP$.
+
+\subsubsection{Authentic Firms}
+
+Each authentic firm takes into account the demand function and chooses the price of the variety that maximizes the following profit function, acting as a monopolistic competitor:
+\begin{equation}
+\pi_{j}^{a}=\left[p_{j}-c\left(b_{j}\right)\right]q_{j}^{a}-f
+\end{equation}
+where $q_{j}^{a}=(1-s)q_{j}$, $c(b_{j})$ is the marginal cost of
+production that increases with the quality draw of variety $j$,
+i.e., $c'(b_{j})>0$, and $f$ is the fixed cost of production. 
+
+Profit maximization leads to the following optimal price:\footnote{Because of monopolistic competition, the authentic producer price exhibits a constant markup and is independent of the level of counterfeiting activity. This feature of the model is motivated by the empirical result in Section \ref{subsec:results_prices} which shows trademark registrations led to insignificant changes in brand prices.} 
+\begin{equation}
+p_{j}^{a}=\frac{\sigma}{\sigma-1}c\left(b_{j}\right).
+\end{equation}
+Given the optimal price, each authentic producer's output is
+\begin{eqnarray} \label{eq:output_authentic}
+   q_i^A&=& (1-s)Q P^{\sigma} \left(\frac{\sigma}{\sigma - 1} \right)^{-\sigma} \left( \frac{c_i}{b_i} \right)^{-\sigma},
+\end{eqnarray}
+and her revenue is given by:
+\begin{equation}
+r_{j}^{a}=(1-s)\left(\frac{\sigma-1}{\sigma c(b_{j})}\right)^{\sigma-1}\left(b_{j}P\right)^{\sigma}Q.
+\end{equation}
+The profit can be expressed as: 
+\begin{equation}
+\pi_{j}^{a}=r_{j}^{a}/\sigma-f.
+\end{equation}
+
+
+\subsubsection{Counterfeiters}
+
+The counterfeiter is assumed to take the authentic producer's price as given, and her output equals $q_j^c=sq_j$. Because the counterfeited products have an inferior quality, we assume their unit production cost is a fraction $\rho $ of producing the authentic variety, i.e., $c_i(\rho b_i) = \rho c_i(b_i)$, where we assume the cost function is homogeneous of degree 1. For the same reason, we assume the counterfeiter's fixed cost of production is lower than the fixed cost of authentic producers and, for simplicity, negligible. Counterfeiters
+hence earn the following revenues and profits:
+\begin{equation}
+r_{j}^{c}=s\left(\frac{\sigma-1}{\sigma c(b_{j})}\right)^{\sigma-1}\left(b_{j}P\right)^{\sigma}Q.
+\end{equation}
+\begin{equation}
+\pi_{j}^{c}=r_{j}^{c}\left(\sigma-\rho\sigma+\rho\right)/\sigma.
+\end{equation}
+
+
+\subsubsection{Equilibrium Conditions}
+
+Authentic producers would be active if and only if $\pi_{j}^{a}\geq0$. Assuming the cost function is not too convex, i.e., $\frac{c'(b_j)b_j }{c(b_j)}<\frac{\sigma}{\sigma-1}$, profits of authentic producers are increasing in $b_j$.\footnote{This is shown in section \ref{proof:auth_profits} of the online appendix.} Then authentic producers would only produce if $b_{j}\geq b^{*}$ where $b^{*}$ is the cutoff quality defined in:
+\begin{equation}
+(1-s)\left(\frac{\sigma-1}{\sigma c(b^{*})}\right)^{\sigma-1}\left(b^{*}P\right)^{\sigma}Q=\sigma f.
+\end{equation}
+
+We assume that counterfeiters are present only in varieties where authentic producers are present (i.e., there cannot be a variety in which only the counterfeiter exists, but not the authentic producer). As such, they do not have a cutoff condition on their own. 
+
+Assuming that authentic producers must pay a fixed cost of entry $f_{e}$ to enter the market and face a constant probability of death $\delta$ in each period, the free entry condition requires that
+\begin{eqnarray} \label{eq:zeroprofit_general}
+    \frac{1 - G(b_i)}{\delta}  \cdot E\left[\left. \pi(b_i) \right| b_i > b^{\ast}  \right]   & = & f_e
+\end{eqnarray}
+
+\noindent where $Prob(b_i > b_i^{\ast}) = 1 - G(b_i^{\ast})$.
+
+\begin{comment}
+The free entry condition can be rewritten as
+\begin{eqnarray}  \label{eqn:fe_tm}
+            \frac{f (1 - G(b_i^{\ast}))}{\delta } \left( \frac{\tilde{b_i}^{\sigma}c(\tilde{b_i})^{1-\sigma} }{(b_i^{\ast})^{\sigma} ({c(b_i^{\ast})})^{1-\sigma}}  - 1 \right)&=& f_e
+\end{eqnarray}
+
+%where  we define average quality adjusted cost $\tilde{b_i}^{\sigma}c(\tilde{b_i})^{1-\sigma} \equiv \int_{b_i^{\ast}}^{\infty}  b_i^{\sigma} c(b_i)^{1-\sigma}  \frac{g(b_i)}{1 - G(b_i^{\ast})}d b_i$ and average quality $\tilde{b_i}$ is implicitly defined as the quality at which cost are the same as output-weighted average cost $  c(\tilde{b_i}) = \int_{b_i^{\ast}}^{\infty} c(b_i) \frac{q(b_i)}{q(\tilde{b_i})}  \frac{g(b_i)}{1 - G(b_i^{\ast})}  d b_i$. Note that average quality is a function of optimal quality $b_i^{\ast}$.
+\end{comment}
+
+Next assume that labor is the only factor of production and each unit of output (including both authentic and counterfeiter output) and fixed costs of production and entry require one unit of labor at a wage that we normalize to 1. %The number of firms $M$ will be determined by how much labor $L_e$ is available to pay the entry cost.
+%Under the assumption that each authentic producer uses one unit of labor per fixed cost $f_e$ to enter, total labor used for entry is $ L_e = f_e  M_e$, where $M_e$ denotes the number of all potential authentic firms trying to enter. As in \cite{Melitz2003}, we consider a steady state in which the inflow of authentic firms (potential entrants that end up drawing a quality larger than the cutoff) equals the outflow of authentic firms, $ (1 - G(b_i^{\ast}))M_e = \delta M$. Together with the zero profit condition given in \eqref{eq:zeroprofit_general}, this yields that total labor needed for entry must equal total profits of authentic producers, $ L_e = \bar{\pi}^a M = \Pi^{a}$.
+The labor market clearing condition, together with the aggregate profit equations of authentic producers, $\Pi^a = R^a - L_p^a$, and counterfeiters, $\Pi^c = R^c - L_p^c$, determines the number of varieties in the market, $M$:
+\begin{eqnarray} \label{eq:M_solution}
+M  & = &  \frac{L}{\bar{r}^a \left( 1+\rho \frac{s}{1-s}  \frac{\sigma - 1}{\sigma}   \right)}
+\end{eqnarray}
+
+\noindent where  the average revenue of authentic firms, $\bar{r}^a \equiv \int_{b_i^{\ast}}^{\infty} r^{a}(b_i)  \frac{g(b_i)}{1 - G(b_i^{\ast})}  d b_i$, captures the average labor demand by authentic producers and $\rho \frac{s}{1-s}  \frac{\sigma - 1}{\sigma}$ $\bar{r}^a$ reflects the average labor demand by counterfeiters.
+
+
+\subsection{Model Predictions: The Effects of Trademark Protection}
+
+Now consider the case of trademark protection which reduces (and, in the case of full trademark protection, eliminates) the probability of consumers receiving counterfeits, $s$. 
+
+An increase in the level of trademark protection raises demand allocation to authentic producers. As in \cite{Melitz2003}, an increase in domestic demand will not change the cutoff quality or average quality and average revenue, but will raise the number of (authentic) varieties $M$ and lower the aggregate price. This result is summarized in the following proposition:\vspace{0.3cm}
+
+\begin{proposition} \label{prop:M_s}
+The number of authentic firms (products) $M$ increases with the level of trademark protection, that is, when the level of counterfeiting activity $s$ falls.
+\end{proposition}
+
+\begin{proof}
+See appendix section \ref{sec:proofs}.
+\end{proof}
+
+Each firm's price is unaffected by increased trademark protection due to the assumption of monopolistic competition that results in constant markups. However, better trademark protection affects each incumbent authentic producer's output  in two ways. On the one hand, the lower aggregate price reduces demand per variety; on the other hand, the decrease in counterfeiting $s$ enables each authentic producer to obtain a greater share of variety-specific demand. Overall, as we summarize in the next proposition, the net effect of stronger trademark protection on individual authentic firms' output is found positive, in line with the empirical results in Section \ref{sec:empirical_evidence}. 
+
+\begin{proposition} \label{prop:q_s}
+The output of the authentic firm increases with the level of trademark protection,  that is, when the level of counterfeiting activity $s$ falls.
+\end{proposition}
+
+\begin{proof}
+See appendix section \ref{sec:proofs}.
+\end{proof}
+
+Now we examine the welfare change under trademark protection. The welfare under (full) trademark protection relative to the welfare without trademark protection is given by:
+
+\begin{eqnarray} \label{eq:expectedutility}
+\frac{E(U(s=0))}{E(U(s>0))} &= &\frac{\lambda(0)}{\lambda(s)} \left( \frac{M(0)}{M(s)} \right)^{\frac{1}{\sigma - 1}} \\
+&=& \underbrace{\frac{1}{\lambda(s)}}_{\geq 1} \underbrace{\left( 1+\rho \frac{s}{1-s}  \frac{\sigma - 1}{\sigma}   \right)^{\frac{1}{\sigma - 1}}  }_{\geq 1} \geq 1
+\nonumber 
+\end{eqnarray}
+
+An increase in trademark protection will raise welfare by reducing (or eliminating in the case of full trademark protection) the utility discount $\lambda\equiv(1-s)+s\rho^{\frac{\sigma}{\sigma-1}}$ due to the presence of counterfeiting (reduced information frictions) and raising the number of authentic product varieties $M$  (variety gains). This finding is summarized below:\vspace{0.3cm} 
+
+\begin{proposition} \label{prop:welfare_s}
+Stronger trademark protection raises aggregate welfare.
+\end{proposition}
+
+\begin{proof}
+See appendix section \ref{sec:proofs}.
+\end{proof}
+
+
+\subsection{Quantifying the Welfare Effect of Trademark Protection}
+
+In this subsection, we estimate the welfare gains from trademark protection as given by equation \eqref{eq:expectedutility} by proceeding in the following steps.
+
+First, we compute the change in the number of firms $\frac{M(0)}{M(s)}$ based on estimated changes in the probability of entry and exit as a result of stronger trademark protection:
+\begin{eqnarray}
+     \frac{M(s=0)}{M(s>0)} &=& 1 + \frac{\Delta Pr(entry) - \Delta Pr(exit)}{Pr(exist|s>0)}
+\end{eqnarray}
+Using the estimated causal effect of the trademark law on the entry and exit of Western firms in columns (1) and (2) of Table 	\ref{tab:extensivemargin_all} (for a firm with mean trademark intensity) together with the share of firms that existed before trademark protection, $Pr(exist|s>0)$, we find an increase in the number of firms $M$ by around $1.9\%$.
+
+Second, we combine the estimated  change in the number of firms with the estimated change in the size of authentic producers (based on column (3) of Table \ref{tab:baseline}) to derive an estimate for $s$:
+\begin{eqnarray}
+s & = & 1- \frac{M(s>0)}{M(s=0)} \frac{q_i^a (s>0)}{q_i^a (s=0)}
+\end{eqnarray} 
+%where we use the estimated effect of the trademark law on the size of Western firms in column (3) of Table \ref{tab:baseline} (for a firm with mean trademark intensity) for $\Delta \ln (q_i^a)$ to compute\footnote{Note that in the theory, this expression holds for every firm. In the data, we use the average estimated effect.}
+Taken together, this results in a share of counterfeiters $s$ of around $6.3\%$. This is smaller than the market share (based on employment) of Japanese (11\%) and Chinese firms (16\%) before the trademark law, consistent with the idea that not all Japanese or Chinese firms were counterfeiters.
+
+Finally, we estimate $\rho$ based on the above estimates as well as an assumption on the elasticity of substitution $\sigma$:
+\begin{eqnarray}
+\rho   & = & \left( \frac{M(s=0)}{M(s>0)} - 1  \right) \frac{1-s}{s} \frac{\sigma}{\sigma-1} 
+\end{eqnarray}
+Using a value of $\sigma = 4$ as often assumed in the literature (e.g., \citealp{Bernardetal2003}), in conjunction with the other estimates, yields $\rho = 0.38$.
+
+Taking into account the above parameters, we obtain $\lambda = 0.95$, which implies that the consumer utility loss from potentially consuming counterfeits is about 4.8\%. Incorporating this and the change in the number of varieties into equation \eqref{eq:expectedutility} suggests that the overall trademark law caused welfare to increase by 5.4\%, which is mainly caused by the increase in consumers' utility (88\%), with some additional benefit from increased varieties (12\%).
+
+
+\begin{comment}
+\noindent This enables us to rewrite the welfare ratio as:
+\begin{equation} 
+\frac{E(U(s=0))}{E(U(s>0))} &= \frac{1}{\lambda}\left(\frac{(1-s){q}^{a}(s=0)}{{q}^{a}(s>0)}\right)^{\frac{1}{\sigma-1}}.
+\end{equation}
+
+
+We can estimate $s$ based on the output of authentic (proxied by Western) vs. counterfeiter
+(proxied by Japanese) firms prior to the trademark law and $\dot{q}_{a}$ based on the change in authentic firms' output (or employee). To estimate $\lambda$, we use the price change in Japanese firms after the trademark law as $\dot{p}_{c}=\rho$ along with estimated $s$ and $\sigma$.
+
+\subsection{Extension: The Formation of Domestic Linkages}
+
+In this subsection, we extend the model to explore how trademark protection may also foster interactions between foreign authentic firms and domestic merchants, a result established in the empirical section. We assume that foreign authentic producers can choose between two forms of distributing their products, direct marketing using their own (foreign) employees vs. working with a domestic merchant/sales agent. The two forms of distribution vary in two aspects. First, in the absence of trademark protection, the threat of counterfeiting is assumed to be greater
+when working with a domestic merchant/sales than marketing products directly, i.e., $s_{2}>s_{1}$, as domestic merchants/sales may collaborate
+with counterfeiters and help counterfeiters extract a greater share of market demand. With trademark protection, the threat of counterfeiting is reduced or eliminated for both distribution modes. Second, the advantage of working with a domestic merchant is access to larger domestic markets (such as inland provinces outside Shanghai which were limited only to domestic businesses and merchants), i.e., $E_{2}>E_{1}.$ The profits from direct distribution and indirect distribution via
+domestic merchants are denoted as $\pi_{1}$ and $\pi_{2}$, respectively.
+
+\subsubsection{Distribution Decisions}
+
+There are two stages to the game. In the first stage, the authentic producer decides whether to involve a domestic merchant. In stage
+two, the merchant delivers its service and bargains for payment. As usual, the game is solved backwards, starting from stage two.
+
+Assume that whenever the foreign authentic producer and the domestic merchant bargain, they reach an agreement according to the Nash bargaining solution, with the bargaining weight $\beta\in(0,1)$ for the foreign
+producer and $1-\beta$ for the domestic merchant. In case of a breakup of the negotiation, the foreign authentic producer has the outside
+option $\pi_{1}$ while the supplier has the outside option of $\mu_{0}$.
+
+Therefore in an equilibrium in which the domestic merchant distributes the products, the payoffs from the bargaining game are:
+\begin{equation}
+R_{f}=\pi_{1}+\beta(\pi_{2}-\pi_{1}-\mu_{0})
+\end{equation}
+for the foreign producer and 
+\begin{equation}
+R_{d}=\mu_{0}+(1-\beta)(\pi_{2}-\pi_{1}-\mu_{0})
+\end{equation}
+for the domestic merchant which can be interpreted as the payment of the foreign producer to the domestic merchant for its service.
+
+The foreign authentic producer would choose working with domestic merchants if and only if $\pi_{2}\geq\pi_{1}+\mu_{0}$. The domestic
+merchant would choose to work with foreign firms if and only if $R_{d}>c$
+where $c$ is the cost of distribution service.
+
+\subsubsection{The Effect of Trademark Protection on Domestic Linkages}
+
+We assume that when there is no trademark protection, $s_{2}$ is sufficiently large such that $\pi_{2}(b^{*})<\pi_{1}(b^{*})+\mu_{0}$
+or equivalently
+
+\begin{equation}
+(1-s_{2})\left(\frac{\sigma-1}{\sigma\varphi}\right)^{\sigma-1}b^{*}P^{\sigma-1}E_{2}<\sigma f+\mu_{0}.
+\end{equation}
+This implies that all foreign firms with qualities at or above $b^{*}$ would choose direct distribution in the absence of trademark protection.
+
+Now consider the case of full trademark protection in which both $s_{1}$
+and $s_{2}$ become $0$. Foreign firms would choose distribution via domestic merchants as long as:
+\begin{equation}
+\left(\frac{\sigma-1}{\sigma\varphi}\right)^{\sigma-1}b_{j}P^{\sigma-1}\left(E_{2}-E_{1}\right)>\mu_{0}.
+\end{equation}
+Setting the above to equality yields the quality threshold for working with domestic merchants $b'$ given by:
+\begin{equation}
+b'=\left(\frac{\sigma-1}{\sigma\varphi}\right)^{\sigma-1}P^{\sigma-1}\mu_{0}^{-1}\left(E_{2}-E_{1}\right).
+\end{equation}
+Firms whose quality exceeds $b'$ will choose to work with domestic merchants to gain access to inland markets; firms whose quality lies
+between $b'$ and $b^{*}$ will choose direct marketing.
+
+In this case, the welfare impact of trade protection goes beyond decreases in consumer utility discount $\lambda$ and aggregate price $P$, the two determinants of the welfare in the previous subsection. Instead,the welfare effect can include additionally an increase in market
+size $E$ (for firms choosing to work with domestic merchants) and the profit of domestic merchants.
+
+\end{comment}
+
+\section{Comparing Alternative Institutional Attempts} \label{sec:emp_alternative_institutions}
+
+
+As discussed in Section \ref{sec:historicalbackground}, the 1923 trademark law was preceded by a series of alternative institutional models exploited by foreign powers to address trademark issues. These include extraterritoriality leading to the direct imports of foreign legal institutions in China, bilateral commercial treaties with specific trademark provisions, and a subsequent legal trademark code in 1904 that had never been put into force. Our long time horizon in the data enables us to compare the effect of the 1923 trademark law to the effects of these alternative approaches and attempts.
+
+In this section, we construct three additional variables to represent each of these approaches and attempts. First, we construct a firm-year specific measure of extraterritorial rights based on the firm's nationality and the nation's extraterritorial status in a given year. Due to geopolitical reasons such as the start and end of World War I that were arguably orthogonal to Chinese economy, certain countries were added and deleted from the list of nations that enjoyed extraterritorial status.\footnote{The countries that lost extraterritorial status were: Australia (1901), Austria (1917), Czechoslovakia (1917), Germany (1917), Finland (1924), Hungary (1917), Latvia (1924), Philippines (1898), Russia (1917). The countries that gained extraterritorial status were: Switzerland (1918), Japan (1896).} These changes in extraterritorial power caused firm-specific changes in their legal institutional settings. In legal disputes, when the defendants' home countries had extraterritorial status, the home-country law of the defendants would apply and the cases would be tried at their consular courts. However, differences in countries' legal systems such as the filing principles of the trademark law and the lack of strong domestic enforcement could lead to unresolved disputes and jurisdiction evasion.
+
+Second, we use a dummy variable to denote the commercial treaties China signed with Great Britain, United States, and Japan in 1902 and 1903, respectively. The bilateral commercial treaties, requiring China to establish its own legal trademark system among other demands, again exhibited conflicting interests with both Western nations such as Great Britain and Japan attempting to export their respective trademark laws. 
+
+Finally, we include a dummy variable to denote China's first attempt after the bilateral treaties to establish a domestic trademark code in 1904. The code, largely influenced by Japan's trademark system, was eventually not enforced due to protests from Western governments.
+
+The estimation results that evaluate and compare the effects of all three alternative institutions with the 1923 trademark law are reported in Table \ref{tab:alternative} where each institutional measure is interacted with firm-specific trademark intensity.\footnote{The appendix to the Hong List that lists which firms offer which type of product or service is only available during 1920-1930. In order to understand which products and services firms offer across the entire  period of 1872-1936, we manually assign products to firms based on the textual description of the activity of the firm in the Hong List.} The results in column (6) show that when taking into account all measures and controlling for country-year dummies, neither extraterritoriality nor bilateral treaty exerted significant, positive effects on firm employment. The unenforced 1904 trademark code, as anticipated, was also found to have no effects. Across all the alternatives, the 1923 trademark law was the only measure shown to have played a positive role in the growth of trademark-intensive firms. These findings suggest that earlier attempts involving direct imports of foreign institutions had been largely unsuccessful as means of trademark protection and a positive growth effect was not achieved until the establishment of a domestic trademark institution. 
+
+\section{Conclusion} \label{sec:conclusion}
+
+In this paper, we investigate the economic effects of trademark protection by exploiting a historical precedent — the introduction of China’s first trademark law of 1923 — and a series of newly digitized micro-level datasets in Shanghai that provide rare, first-hand insights into how firms from around the world operated in Shanghai, one of the most volatile and complex markets, before and after the birth of trademark institutions.
+
+Our empirical evidence shows that the trademark law exerted sharply different and complex effects on Western, Japanese and Chinese firms who had played distinct roles in the trademark conflicts. The trademark law spurred growth and brand investment for trademark intensive Western firms, but registrations of trademarks did not lead to significant changes in prices. In contrast, Japanese businesses, who had frequently been accused of counterfeiting, experienced employment contractions while attempting to build their own brands after the law. Further, the trademark law led to greater domestic integration both within and outside the boundary of Western firms as they became more inclined to recruit and promote Chinese employees as well as work with Chinese agents. The Chinese intermediaries then experienced a significant growth in both the volume of foreign clients and employment. 
+
+We then develop a stylized model featuring heterogeneous authentic and counterfeiting producers to quantify the aggregate effects of the trademark law. An increase in trademark protection, by lowering the consumers' probability of receiving counterfeits, leads to a direct market reallocation within brand-specific segments from counterfeiters to authentic producers and increases the number of (authentic) varieties and the output of individual authentic firms as documented in the empirical evidence. Computing the welfare change based on the model's sufficient statistics suggests that the trademark law raised aggregate welfare by 5.4\%, via reduced information frictions and increased authentic product varieties.
+
+While the 1923 trademark law exerted significant economic effects, the preceding alternative institutional models exploited by foreign powers, including extraterritorial rights, bilateral commercial treaties, and an unenforced legal trademark code, have been found ineffective in fostering firm growth. These findings convey important implications for the distinct role of trademark protection, an under-examined form of IP, in the growth of less developed economies, highlighting the challenges of addressing international trademark disputes and the potential gains from domestic trademark institutions.
+
+
+
+\clearpage
+\appendix
+\singlespacing
+\setlength{\bibsep}{0.0pt}
+
+\bibliographystyle{chicago}
+\bibliography{refer.bib}
+
+
+
+\clearpage
+\section{Figures}
+
+\begin{figure}[hbt!]
+
+\centering
+\includegraphics[width=0.8\textwidth]{figures/Chinese_trademark_share_categories_1924_1927.png}
+\caption{Most common product categories, Chinese trademark registries 1924-1927}
+\label{fig:trademarkschina_products}
+    \flushleft{
+    \floatfoot{\textit{Notes:} We computed these statistics based on our own digitization of all issues of the Chinese trademark registries called \emph{Shangbiao Gongbao} (\begin{CJK*}{UTF8}{gbsn}商标公报\end{CJK*})  between January 1924 and 1927. }
+    }
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[height=0.7\textheight]{figures/example_page.png}
+    \caption{Example of a page from the Hong List, 1927}
+    \label{fig:examplepage}            
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures092020/pdf_figures_202010/Imitation_ads.pdf}  
+    \caption{Share of Advertisements against Trademark Infringements in North China Herald}
+    \label{fig:imitation}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \subfigure[All concessions]{
+        \includegraphics[width=0.7\textwidth]{figures092020/paper_summary_figures_012021/data_validation_all_concessions.pdf}
+    }
+    \quad
+    \subfigure[Public concession]{
+            \includegraphics[width=0.7\textwidth]{figures092020/paper_summary_figures_012021/data_validation_public_concession.pdf}
+    }
+    \caption{Data Validation}
+    \label{fig:validation}
+\end{figure}
+
+\vspace{1.5cm}
+
+\begin{figure}[ht]
+    \centering
+    \subfigure[Number of firms]{
+        \includegraphics[width=0.45\textwidth]{figures092020/paper_summary_figures_012021/Number_of_businesses_in_Concessions.pdf}
+    }
+    \quad  
+    \subfigure[Total employment]{
+        \includegraphics[width=0.45\textwidth]{figures092020/paper_summary_figures_012021/Number_of_employments_in_Concessions.pdf}
+    }
+    \caption{Time Trends of Firms and Employment in Shanghai Concessions}
+    \label{fig:yeartrend}
+\end{figure}
+
+\vspace{1.5cm}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/BAT.jpg}
+    \par
+    \centering \footnotesize{Left: BAT-Shanghai in 1906; Right: BAT-Shanghai in 1926}
+    \caption{Employment of British American Tobacco in 1906 versus 1926}
+    \label{fig:BAT}
+\end{figure}
+
+\vspace{1.5cm}
+
+\begin{figure}[ht]
+    \centering
+    \subfigure[Share of firm numbers]{
+        \includegraphics[width=0.45\textwidth]{figures092020/paper_summary_figures_012021/Share_of_industries_firmnum_5yrs.pdf}
+    }
+    \quad  
+    \subfigure[Share of total employment]{
+        \includegraphics[width=0.45\textwidth]{figures092020/paper_summary_figures_012021/Share_of_industries_empl_5yrs.pdf}
+    }
+    \caption{Industry Composition of Businesses in Shanghai's Concessions}
+    \label{fig:indcomposition}            
+\end{figure}
+
+\vspace{1cm}
+
+\begin{figure}[ht]
+    \centering
+    \subfigure[Share of firm numbers]{
+        \includegraphics[width=0.45\textwidth]{figures092020/paper_summary_figures_012021/Share_of_nationalities_firmnum_5yrs.pdf}
+    }
+    \quad  
+    \subfigure[Share of total employment]{
+        \includegraphics[width=0.45\textwidth]{figures092020/paper_summary_figures_012021/Share_of_nationalities_empl_5yrs.pdf}
+    }
+    \caption{Nationality Composition of Businesses in Shanghai's Concessions}
+    \label{fig:ctrycomposition}            
+\end{figure}
+
+\begin{comment}
+\vspace{1cm}
+\begin{figure}[ht]
+    \centering
+    \subfigure[Share of total employment, 1920-1922]{
+        \includegraphics[width=0.45\textwidth]{figures092020/paper_summary_figures_012021/Share_of_nationalities_empl_trademark_group_2022.pdf}
+    }
+    \quad  
+   \subfigure[Share of total employment, 1923-1930]{
+        \includegraphics[width=0.45\textwidth]{figures092020/paper_summary_figures_012021/Share_of_nationalities_empl_trademark_group_2330.pdf}
+    }
+   \caption{Nationality Composition of Shanghai Concession Businesses by Trademark Intensity}
+    \label{fig:ctrycompositionbytrademark}            
+
+ \end{figure}
+\end{comment}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures092020/pdf_figures_202010/post_1923_event_study_foreign.pdf} 
+    \caption{The Effect of Trademark Law on Western Firm Employment: Event Study}
+    \label{fig:westernevent}            
+\end{figure}
+
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures092020/pdf_figures_202010/post_1923_event_study_China.pdf} 
+    \caption{The Effect of the Trademark Law on Chinese Firm Employment: Event Study}
+    \label{fig:chinaevent}            
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures092020/pdf_figures_202010/post_1923_event_study_Japan.pdf}  
+    \caption{The Effect of the Trademark Law on Japanese Firm Employment: Event Study}
+    \label{fig:japanevent}            
+\end{figure}
+
+
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures092020/pdf_figures_202010/agg_notyettreated_upto29_branded_dyn_balance18.pdf} 
+    \caption{The Effect of the Trademark Law on Price: Event Study}
+    \label{fig:priceevent} 
+    \flushleft{
+    \floatfoot{\textit{Notes:} The graph is produced based on the method and R program described in \cite{CallawaySantAnna2020}. Blue bars represent log prices after trademarks are registered, red bars represent the months before trademark registration. Time on the x-axis is in months.  }
+    }
+\end{figure}
+
+
+
+
+
+
+\clearpage
+\section{Tables}
+
+\begin{table}[hbt!]
+    \caption{Trademark-intensity across product categories}
+    \label{tab:trademarkintensity}
+\centering
+\resizebox{1\textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{m{20em}cm{18em}c}
+\hline \hline
+\textbf{NCL product category} & \textbf{Trademark int.} & \textbf{NCL product category} & \textbf{Trademark int.}\\
+\hline
+Pharmaceuticals & 0.088 & Fabrics and fabric covers & 0.016 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Non-medicated cosmetics and toiletry & 0.076 & Toys, games, sports equipment & 0.016 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Foodstuffs of plant origin & 0.073 & Precious metals,  jewellery, clocks, watches & 0.013 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Foodstuffs of animal origin & 0.048 & Medical equipment & 0.013 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Alcoholic beverages & 0.047 & Furniture & 0.013 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Chemical products  & 0.046 & Natural or synthetic yarns & 0.012 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Paper, cardboard and office goods & 0.045 & Dressmakers' articles & 0.012 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Tobacco & 0.041 & Leather and leather goods & 0.010 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Non-alcoholic beverages; beer & 0.040 & Musical instruments & 0.008 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Machines, motors and engines & 0.036 & Canvas and other materials & 0.008 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Hand-operated tools & 0.035 & Firearms  & 0.006 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Paints and colorants & 0.034 & Scientific and technological services & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Scient. instruments and audio equip. & 0.034 & Food and drink services & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Metals & 0.031 & Telecommunications services & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Clothing, footwear and headwear & 0.030 & Transport; packaging and storage of goods & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Industrial oils and fuels & 0.029 & Legal, security, and personal services & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Small, hand-operated utensils & 0.026 & Medical and veterinary services & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Live animals and plants & 0.024 & Construction services; mining and drilling & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Environmental apparatus & 0.024 & Business services & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Vehicles & 0.021 & Treatment and recycling & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Electrical, thermal, acoustic insulating materials & 0.021 & Insurance, financial and real estate services & 0 \\
+\specialrule{0em}{1.25pt}{1.25pt}
+Materials, not of metal & 0.018 & Education, entertainment, sports & 0 \\
+\hline  \hline
+\end{tabular}
+
+	\begin{tablenotes}[flushleft]
+		\item \footnotesize \textit{Notes:} Trademark intensity is measured using each product's share in total pre-1923 trademarks recorded at the historical trademark database from the World Intellectual Property Organization (WIPO) IP Portal. 
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+\begin{comment}
+\begin{table}[hbt!]
+	\centering
+	\caption{Effect of Trademark Law on Employment of Western Firms}
+	    \label{tab:baseline}
+\resizebox{1\textwidth}{!}{
+\begin{threeparttable}
+    \centering
+    \begin{tabular}{lccccccc} \hline \hline
+         & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
+         & ln(empl) & ln(empl) & ln(empl) & ln(empl) & ln(empl) & ln(empl) & ln(empl)  \\ \hline
+         &  &  &   &  &  & &  \\
+        Post 1923*trademark intensity & 1.421* & 1.753** & 2.179** & 2.227**  &  &  & \\
+         & (0.814) & (0.778) & (1.050)  & (1.053)  &  &  \\
+        Post 1923*trademark intensity excl. Japan & & & & & 2.312** & & \\
+        & & & && (1.033) & & \\
+        Post 1923*country-specific trademark intensity  && & & &  & 1.716* & \\
+        & & & &&  & (0.937) & \\
+        Post 1923*trademark intensity/employment, US  & & && &  &  & 13.909** \\
+        & & & &&  &  & (5.962) \\
+        &  &  & &&&& \\
+        Observations & 2,068 & 2,034 & 1,935 & 2,938 & 1,935 &1,935 & 1,254 \\
+       R-squared & 0.912 & 0.913 & 0.913 & 0.892 & 0.913 & 0.913&0.917 \\
+        Firm FE & Yes & Yes & Yes& Yes & Yes & Yes& Yes \\
+        Year FE & Yes & &  & & & & \\
+        Ctry*Year FE &  & Yes& Yes & Yes& Yes& Yes& Yes \\
+        Ind*Year FE &  &  & Yes& Yes& Yes& Yes& Yes \\
+        Sample from 1920 until & 1926& 1926& 1926& 1930 & 1926& 1926& 1926 \\ \hline \hline
+    \end{tabular}
+	\begin{tablenotes}[flushleft]
+		\item \footnotesize \textit{Notes:} This table reports the estimated effect of the 1923 trademark law on Western firms' employment. The sample includes Western firms located in Shanghai's concessions with employment and activity information between 1920-1926. The dependent variable is the natural log of a firm's employment in a given year. Post trademark law is a dummy denoting the period after the establishment of the trademark law in 1923. Trademark intensity is a firm-specific measure of trademark dependence based on each firm's pre-1923 product mix and product-level trademark intensity calculated using each product's share in total pre-1923 trademarks (all countries). ``Trademark int. excl. Japan'' excludes Japan in the calculation of the trademark intensity. ``Country-specific trademark intensity'' uses the trademark intensity of a firm's home country, and the aggregate trademark intensity if trademark data is not available for that country. ``Trademark intensity/employment, US'' uses the trademark intensity of the US, divided by US employment in that specific product category.  Standard errors clustered by product category and country-year. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+\end{comment}
+
+
+\begin{table}[hbt!]
+	\centering
+	\caption{The Effect of the Trademark Law on Firm Employment Growth}
+	\label{tab:baseline}
+\resizebox{0.8\textwidth}{!}{  	
+\begin{threeparttable}
+    \centering
+    \begin{tabular}{lcccc} \hline \hline
+         & (1) & (2) & (3) & (4) \\
+         & ln(empl) & ln(empl) & ln(empl) & ln(empl) \\ \hline
+         &  &  &  &  \\
+         Post 1923 * trademark intensity  &  &  &  \\
+        -- Western & 1.409* & 1.753** & 2.179** & 2.227** \\
+         & (0.822) & (0.774) & (1.060) & (1.064) \\
+        &  &  &  &  \\
+        -- Japanese Firms & -0.403 & -0.071 & -6.849*** & -8.897*** \\
+         & (2.115) & (2.599) & (1.840) & (2.337) \\
+        &  &  &  &  \\
+        -- Chinese Firms & -1.845 & -1.814 & -3.096 & -3.965* \\
+         & (1.652) & (1.678) & (2.395) & (2.252) \\
+        &  &  &  &  \\
+        Observations & 3,216 & 3,182 & 3,045 & 4,557 \\
+        R-squared & 0.906 & 0.908 & 0.913 & 0.890 \\
+        Firm FE & Yes & Yes & Yes & Yes \\
+        Ctry*Year FE &  & Yes & Yes & Yes \\
+        Ind*Year FE &  &  & Yes & Yes \\
+        Sample until & 1926 & 1926 & 1926 & 1930 \\ \hline \hline
+    \end{tabular}
+	\begin{tablenotes}[flushleft]
+		\item \footnotesize \textit{Notes:} This table compares the effects of the trademark law on the employment of Western, Japanese and Chinese firms. The sample includes Western, Japanese and Chinese firms located in Shanghai's concessions with employment and activity information between 1920-1926. The dependent variable is the natural log of a firm's employment in a given year between 1920-1926. Post trademark law is a dummy denoting the period after the establishment of the trademark law in 1923. Trademark intensity is a firm-specific measure of trademark dependence based on each firm's pre-1923 product mix and product-level trademark intensity calculated using each product's share in total pre-1923 trademarks. Standard errors clustered by product category and country-year. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+
+\begin{comment}
+\begin{table}[hbt!]
+	\centering
+	\caption{Pre-trend Checks}
+    \label{tab:balancing}
+    \resizebox{0.8\textwidth}{!}{
+\begin{threeparttable}
+    \begin{tabular}{lccc} \hline \hline
+         & (1) & (2) & (3) \\
+         & $\Delta$ ln(empl) 20-22 & $\Delta$ ln(empl) 21-22 & $\Delta$ ln(empl) 20-21 \\ \hline
+         &  &  &  \\
+        trademark intensity & 0.801 & 0.097 & 0.829 \\
+         & (1.480) & (1.198) & (1.122) \\
+         &  &  &  \\
+        Observations & 253 & 245 & 267 \\
+        R-squared & 0.109 & 0.093 & 0.063 \\
+        Ctry-ind FE & Yes & Yes & Yes \\ \hline \hline
+    \end{tabular}
+	\begin{tablenotes}[flushleft]
+		\item \footnotesize \textit{Notes:} This table reports pre-trend check results for the period of 1920-1922. The sample includes Western firms located in Shanghai's concessions with employment and activity information between 1920-1926. The dependent variable in the three columns are the natural log of a firm's average employment in 1920-1922, 1921-1922, and 1920-1021, respectively. Trademark intensity is a firm-specific measure of trademark dependence based on each firm's pre-1923 product mix and product-level trademark intensity calculated using each product's share in total pre-1923 trademarks (all countries). Standard errors clustered by product category and country-year.   *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+\end{comment}
+
+\begin{table}[hbt!]
+	\centering
+    \caption{Controlling for Alternative Product and Country Attributes}
+    \label{tab:robustness}
+\resizebox{1\textwidth}{!}{ 
+\begin{threeparttable}
+    \centering
+    \begin{tabular}{lcccccc} \hline \hline
+         & (1) & (2) & (3) & (4) & (5) & (6)  \\
+         & ln(empl) & ln(empl) & ln(empl) & ln(empl) & ln(empl) & ln(empl) \\ \hline
+         &  &  &  &  &  &  &  &  &  \\
+        Post 1923*trademark intensity & 2.179** & 2.068* & 2.164** & 2.156** & 1.698* & 2.818***   \\
+         & (1.050) & (1.047) & (1.024) & (1.037) & (0.945) & (0.944)   \\
+        Post 1923*patent intensity &  & 0.434 &  &  &  &   \\
+         &  & (0.560) &  &  &  &   \\
+        Post 1923*ln(number of firms in product category) &  &  & -0.002 &  &  &    \\
+         &  &  & (0.015) &  &  &    \\
+        Post 1923*ln(total employment in product category) &  &  &  & -0.002 &  &   \\
+         &  &  &  & (0.009) &  &    \\
+        Post 1923*ln(avg firm employment 20-22) &  &  &  &  & -0.089*** &    \\
+         &  &  &  &  & (0.023) &   \\
+        Trademark intensity*ln(real GDP) &  &  &  &  &  & -4.575  \\
+         &  &  &  &  &  & (5.049)   \\
+         &  &  &  &  &  &   \\
+        Observations & 1,935 & 1,935 & 1,935 & 1,935 & 1,898 & 1,935  \\
+        R-squared & 0.913 & 0.913 & 0.913 & 0.913 & 0.915 & 0.913 \\
+        Firm FE & Yes & Yes & Yes & Yes & Yes & Yes  \\
+        Ind*Year \& Ctry*Year FE & Yes & Yes & Yes & Yes & Yes & Yes \\ \hline \hline
+    \end{tabular}
+	\begin{tablenotes}[flushleft]
+		\item \footnotesize \textit{Notes:} This table reports the estimated effect of the 1923 trademark law on Western firms' employment when controlling for other product attributes and using an alternative measure of trademark intensity. The sample includes Western firms located in Shanghai's concessions with employment and activity information between 1920-1926. The dependent variable is the natural log of a firm's employment in a given year. Post trademark law is a dummy denoting the period after the establishment of the trademark law in 1923. Trademark intensity is a firm-specific measure of trademark dependence based on each firm's pre-1923 product mix and product-level trademark intensity calculated using each product's share in total pre-1923 trademarks. Patent intensity is a similar firm-specific measure based on each firm's pre-1923 product mix and product-level patent intensity calculated using each product's share in total pre-1923 patents. Number of firms and total employment are the number of firms and the total number of employees, respectively, in a product category. ``ln(real GDP)'' is the real GDP of the home country of the firm from the \emph{Maddison Project Database}, interpolating data for missing years, see \citet{boltetal2018} and \citet{fouquinhugot2016}.  Standard errors clustered by product category and country-year. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+
+\begin{table}[hbt!]
+	\centering
+	\caption{How did Western Firms Grow? Effect of Trademark Law on the probability of hiring in certain positions }
+	    \label{tab:position_titles}
+\resizebox{0.8\textwidth}{!}{    
+\begin{threeparttable}
+    \begin{tabular}{lccccc} \hline \hline
+         & (1) & & (2) & (3) & (4)  \\
+         &  && \multicolumn{3}{c}{Dummy if firm has:}   \\
+         \cline{4-6} 
+         & ln(empl) && Lawyers & Sales staff & Engineers \\ \hline
+         &  &&  &  &  \\
+        Post 1923*trademark intensity & 3.566** && 0.915 & 0.452 & 0.732* \\
+         & (1.310) && (0.576) & (1.164) & (0.392) \\
+         &  &  &  &  \\
+        Observations & 1,480 && 1,480 & 1,480 & 1,480 \\
+        R-squared & 0.920 && 0.834 & 0.698 & 0.786 \\
+        Firm FE & Yes && Yes & Yes & Yes \\
+        Ctry*Year FE & Yes &  & Yes & Yes & Yes \\
+        Ind*Year FE & Yes& & Yes & Yes & Yes   \\ \hline \hline
+    \end{tabular}  
+	\begin{tablenotes}[flushleft] 
+		\item \footnotesize \textit{Notes:}  Standard errors are clustered by product category. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+
+\begin{table}[hbt!]
+	\centering
+	\caption{Entry, Exit and Product Composition}
+	\label{tab:extensivemargin_all}
+    \centering
+    \resizebox{0.8\textwidth}{!}{ 
+    \begin{threeparttable}
+    \begin{tabular}{lcccccc} \hline \hline
+         & (1) & (2) & (3) & & (4) & (5) \\
+        & \multicolumn{3}{c}{Extensive margin} & & \multicolumn{2}{c}{Product scope}  \\ 
+        \cline{2-4}  \cline{6-7} 
+          & Firm & Firm & Firm & & Adding   & Dropping  \\
+        & entry & exit & exist& & tm-int product & tm-int product  \\\hline
+         &  &  &  &  &  \\
+         Post 1923 * trademark intensity  &  &  &  &  \\
+        -- Western Firms & -0.282 & -0.797** & 0.515 & & -0.624 & -0.717** \\
+         & (0.648) & (0.321) & (0.771) & & (0.715) & (0.267) \\
+        -- Japanese Firms & -1.594* & 0.035 & -1.629 & & 2.334*** & -3.193 \\
+         & (0.893) & (0.728) & (1.345) &  & (0.189) & (2.538) \\
+        -- Chinese Firms & -0.345 & -1.423** & 1.077 & & -0.586 & -0.094 \\
+         & (0.746) & (0.596) & (0.853) & & (0.641) & (0.344) \\
+         &  &  & & &  &  \\
+        Observations & 7,652 & 7,652 & 7,652 & & 2,815 & 2,815 \\
+        R-squared & 0.667 & 0.572 & 0.556 & & 0.340 & 0.342 \\
+        Firm FE & Yes & Yes & Yes && Yes & Yes \\
+        Ind*Year & Yes & Yes& Yes && Yes & Yes  \\
+        Ctry*Year & Yes & Yes& Yes && Yes & Yes  \\\hline \hline
+    \end{tabular}
+    \begin{tablenotes}
+	\item 
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+\begin{table}[htb!]
+	\centering
+	\caption{Advertising Investments}
+    \label{tab:ads_china_japan}
+\resizebox{0.7\textwidth}{!}{ 
+\begin{threeparttable}
+    \begin{tabular}{lccc} \hline \hline
+         & (1) & (2) & (3)  \\
+          & Advertising  & ln(advertising & $\sinh^{-1}$(ad-) \\
+         &  dummy &  days+1) & vertising)  \\ \hline
+         &  &  &   \\
+        Post 1923 * trademark intensity  &  &  &  \\
+        -- Western Firms & 0.540 & 3.323* & 3.373* \\
+         & (0.878) & (1.889) & (1.953) \\
+         &  &  &  \\
+        -- Japanese Firms & 3.464** & 3.060 & 3.680 \\
+         & (1.456) & (2.012) & (2.259) \\
+         &  &  &  \\
+        -- Chinese Firms & -0.315 & 0.627 & 0.549\\
+         & (0.574) & (2.133) & (2.215) \\
+                  &  &  &  \\
+        Observations & 3,135 & 3,135 & 3,135  \\
+        R-squared & 0.697 & 0.809 & 0.806  \\
+        Firm FE & Yes & Yes & Yes  \\
+        Ctry*Year FE & Yes & Yes & Yes  \\
+        Ind*Year FE & Yes & Yes & Yes  \\ \hline \hline
+    \end{tabular}
+	\begin{tablenotes}[flushleft]
+		\item \footnotesize \textit{Notes:} This table reports the estimated effects of the trademark law on the advertising of Western firms on Shen Bao. The sample includes Western firms located in Shanghai's concessions with employment and activity information between 1920-1926. The dependent variables are the dummy of having advertisements on Shen Bao in a specific year, logged numbers of advertising days of advertisements, and the inverse sine of advertising days of advertisements, respectively. Trademark law is a dummy denoting the trademark law established in 1923. Trademark intensity is a firm-specific measure of trademark dependence based on each firm's pre-1923 product mix and product-level trademark intensity calculated using each product's share in total pre-1923 trademarks. Standard errors clustered by product category and country-year. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+
+
+
+
+\begin{table}[htb!]
+	\centering
+	\caption{Domestic Integration within the Boundary of Western Firms}
+    \label{tab:chinese_employees}
+    
+\resizebox{1\textwidth}{!}{ 
+\begin{threeparttable}
+    \begin{tabular}{lccccccccc} \hline \hline
+         & (1) & (2) &  (3) & (4) &  (5)& & (6) & (7)& (8) \\
+         & & & & \multicolumn{2}{c}{Hierarchy} & &  \multicolumn{3}{c}{Job titles} \\
+          \cline{5-6}  \cline{8-10} 
+        & &       ln(foreign      & Dummy        & Dummy   & Avg layer &   & Dummy Chinese  & Dummy Chinese & Dummy Chinese\\
+        & ln(empl) & empl)   & Chinese empl & Chinese mgr& of Chinese empl & & sales staff & engineers & manuf staff \\\hline
+         &  &  &  &  &  &&  &  &  \\
+        Post 1923*trademark intensity & 2.179** & 1.649 & 1.993** & 0.718*** & -0.818*** && 0.130** & -0.689 & -0.386 \\
+         & (1.050) & (1.023) & (0.782) & (0.191) & (0.273) && (0.062) & (0.528) & (0.432) \\
+         &  &  &  &  &  &&  &  &  \\
+        Observations & 1,935 & 1,935 & 1,935 & 1,935 & 811 && 1,480 & 1,480 & 1,480 \\
+        R-squared & 0.913 & 0.933 & 0.758 & 0.521 & 0.510 && 0.671 & 0.742 & 0.376 \\
+        Firm FE & Yes & Yes & Yes & Yes & Yes && Yes & Yes & Yes \\
+        Ind*Year FE & Yes & Yes & Yes & Yes & Yes && Yes & Yes & Yes \\
+        Ctry*Year FE & Yes & Yes & Yes & Yes & Yes && Yes & Yes & Yes \\ \hline \hline
+    \end{tabular}
+    \begin{tablenotes}
+	\item \footnotesize \textit{Notes:} This table reports the estimated effects of the trademark law on the organization of Western firms. The sample includes Western firms located in Shanghai's concessions with employment and activity information between 1920-1926. The dependent variables are the number of layers in a firm's management hierarchy and Chinese employees' average rank/layer in the management hierarchy, respectively. Trademark law is a dummy denoting the trademark law established in 1923. Trademark intensity is a firm-specific measure of trademark dependence based on each firm's pre-1923 product mix and product-level trademark intensity calculated using each product's share in total pre-1923 trademarks. Standard errors clustered by product category and country-year. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+\begin{table}
+\caption{The Client Growth of Chinese Agent Firms}
+ \label{tab:agents}
+\centering
+\resizebox{0.7\textwidth}{!}{ 
+\begin{threeparttable}    
+    \begin{tabular}{lcc} \hline \hline
+         & (1) & (2) \\
+         & Dummy having clients & ln(num clients+1) \\ \hline
+         &  &  \\
+        Western*post 1923*trademark intensity & -0.249 & -1.865 \\
+         & (0.633) & (2.279) \\
+        China*post 1923*trademark intensity & 1.607*** & 2.673*** \\
+         & (0.458) & (0.593) \\
+        Japan*post 1923*trademark intensity & -0.036 & -3.601 \\
+         & (0.823) & (2.558) \\
+         &  &  \\
+        Observations & 3,045 & 3,045 \\
+        R-squared & 0.769 & 0.785 \\
+        Firm FE & Yes & Yes \\
+        Ctry*Year FE & Yes & Yes \\
+        Ind*Year FE & Yes & Yes \\ \hline \hline
+    \end{tabular}   
+    \begin{tablenotes}
+	\item \footnotesize \textit{Notes:} The number of clients counts the list of firms for which Shanghai firms act as agents.   Two-way clustered standard errors by product category and country-year in parentheses.  *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+    
+\end{table}
+
+
+
+\begin{table}[hbt!]
+	\centering
+	\caption{The Employment Growth of Chinese Agents and Manufacturers}
+	    \label{tab:agents_and_manufacturers_china}
+\resizebox{0.8\textwidth}{!}{    
+\begin{threeparttable}
+    \begin{tabular}{lcccc} \hline \hline
+         & (1) & (2) & (3) & (4)  \\
+         & ln(empl) & ln(empl) & ln(empl) & ln(empl) \\ \hline
+         &  &  &  &    \\
+        Post 1923*trademark intensity  & -3.657 & -5.057 & -4.052* & -7.865**  \\
+         & (2.415) & (3.222) & (1.926) & (2.653)  \\
+        Post 1923*trademark intensity*agent  & 14.855* &  &  & 16.137*  \\
+         & (7.196) &  &  & (7.883)  \\
+        Post 1923*trademark intensity*merchant  &  & 4.756 &  & 4.597  \\
+          &  & (2.967) &  & (3.250) \\
+        Post 1923*trademark intensity*manuf  &  &  & 1.884 & 4.498*  \\
+          &  &  & (1.635) & (2.127)  \\
+         &  &  &  &    \\
+        Observations  & 870 & 870 & 870 & 870  \\
+        R-squared  & 0.881 & 0.881 & 0.880 & 0.882  \\
+        Firm FE & Yes & Yes & Yes & Yes  \\
+        Ctry*Year FE & Yes & Yes & Yes & Yes  \\
+        Ind*Year FE & Yes & Yes & Yes & Yes  \\  \hline \hline
+    \end{tabular}  
+	\begin{tablenotes}[flushleft] 
+		\item \footnotesize \textit{Notes:} Sample includes all Chinese firms. Standard errors are clustered by product category. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+\begin{comment}
+
+\begin{table}[hbt!]
+	\centering
+	\caption{Entry as Agents, Merchants, or Manufacturers}
+	    \label{tab:entry_agents}
+\resizebox{1\textwidth}{!}{    
+\begin{threeparttable}
+    \begin{tabular}{lccccccccccc} \hline \hline
+         & (1) & (2) & (3) && (4) & (5) & (6)& & (7) & (8) & (9) \\
+         & \multicolumn{3}{c}{Western firms} && \multicolumn{3}{c}{Chinese firms}&& \multicolumn{3}{c}{Japanese firms} \\
+          \cline{2-4}  \cline{6-8}  \cline{10-12}   
+Entry as:        & agent & merchant & manufacturer && agent & merchant & manufacturer&& agent & merchant & manufacturer \\ \hline
+         &  &  &  & &&&&&&&   \\
+        Post 1923*trademark intensity  & 1.381*** &	1.163***&	-0.285&&	1.880**&	1.432**&	-0.500&	&0.500&	1.849	&-1.845**    \\
+         & (0.357) &	(0.312)	&(0.309)&&	(0.695)	&(0.497)&	(0.558)	&&(0.535)	&(1.223)&	(0.509)   \\
+         &  &  &  & &  & && &&  &      \\
+        Observations  & 4,619&	4,619&	4,619&&	2,330&	2,330	&2,330&	&703&	703&	703  \\
+        R-squared  & 0.883&	0.894&	0.873&&	0.888&	0.877&	0.859&&	0.903&	0.849&	0.859  \\
+        Firm FE & Yes & Yes & Yes& & Yes& Yes & Yes && Yes & Yes & Yes  \\
+        Ctry*Year FE& Yes & Yes & Yes& & Yes& Yes & Yes && Yes & Yes & Yes  \\
+        Ind*Year FE & Yes & Yes & Yes& & Yes& Yes & Yes && Yes & Yes & Yes  \\ \hline \hline
+    \end{tabular}  
+	\begin{tablenotes}[flushleft] 
+		\item \footnotesize \textit{Notes:} The dependent variable is a dummy variable that equals 1 after the firm has entered and the firm is a agent/merchant/manufacturer in any of its years of existence. The sample is fully balanced. Standard errors are clustered by product category. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+\end{comment}
+
+
+\begin{table}[hbt!]
+	\centering
+	\caption{The Effect of Trademark Registrations on Prices}
+	    \label{tab:price_regression}
+\resizebox{0.7\textwidth}{!}{    
+\begin{threeparttable}
+    \begin{tabular}{lccccc} \hline \hline
+      & (1) & (2) & & (3) & (4)  \\
+      Sample:  & \multicolumn{2}{c}{All products} && \multicolumn{2}{c}{Western products} \\
+       \cline{2-3} \cline{5-6} 
+     & ln(price) & ln(price) && ln(price) & ln(price) \\ \hline
+      &   & & &  &\\
+    Post trademark registration & 0.039 & -0.010 && 0.041 & -0.032 \\
+      & (0.038) & (0.034) && (0.043) & (0.037) \\
+      &  &&& &  \\
+    Observations & 3,042 & 3,042 && 2,418 & 2,418 \\
+    R-squared & 0.140 & n/a& & 0.132 & n/a \\
+    Method & OLS & CS && OLS & CS \\ \hline \hline
+    \end{tabular}
+	\begin{tablenotes}[flushleft] 
+		\item \footnotesize \textit{Notes:} Columns (1) and (3) estimate OLS regressions of log monthly prices on an indicator variable that is 1 after the product's trademark is registered in China, including time and product fixed effects. Standard errors are clustered by product category.  Columns (2) and (4) computes the average treatment effect based on the method of \cite{CallawaySantAnna2020} (labelled `CS') which is appropriate for staggered differences-in-differences settings, and implicitly allows for product and time fixed effects. Columns (3) and (4) restrict the analysis to products manufactured by Western companies.  *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+\begin{comment}
+\begin{table}[hbt!]
+\centering 
+  \caption{Effects of trademark protection on aggregate employment}
+    \label{tab:agg_emloyment}
+\resizebox{1\textwidth}{!}{ 
+\begin{threeparttable}
+    \begin{tabular}{lcccc} \hline \hline
+      & (1) & (2) & (3)& (4)  \\
+     & ln(total empl) & ln(total empl) & ln(total empl + 1) & ln(total empl + 1)  \\ \hline
+      &  & & & \\
+    Post 1923 * trademark intensity  & 3.486* & 1.589 & 4.498* & 1.622 \\
+       & (1.991) & (1.581) & (2.299) & (1.416) \\
+        &  & & & \\
+    Observations & 548 & 575 & 582 & 582 \\
+    R squared & 0.851 & 0.875 & 0.866 & 0.886 \\
+    Product FEs & yes & yes & yes & yes \\
+    Year FEs & yes & yes & yes & yes \\
+    Employment allocation & max  & equal & max & equal \\ \hline \hline
+    \end{tabular}
+ \begin{tablenotes}
+	\item \footnotesize \textit{Notes:}  Firm-level employment of multi-product firms is allocated to product with highest trademark intensity in columns (1) and (3), and equally across products in columns (2) and (4).  *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}    
+\end{threeparttable}
+}
+\end{table}
+\end{comment}
+
+\begin{table}[hbt!]
+	\centering
+    \caption{Comparing Alternative Institutions}
+    \label{tab:alternative}
+\resizebox{1\textwidth}{!}{  
+\begin{threeparttable}
+    \begin{tabular}{lcccccc} \hline \hline
+         & (1) & (2) & (3) & (4) & (5) & (6) \\
+         & ln(empl) & ln(empl) & ln(empl) & ln(empl) & ln(empl) & ln(empl) \\ \hline
+         &  &  &  &  &  &  \\
+        \textbf{Part I: ET} &  &  &  &  &  &  \\
+        ET & 0.063 & 0.137 & 0.185 & 0.185 & 0.130 &  \\
+         & (0.092) & (0.134) & (0.143) & (0.143) & (0.152) &  \\
+        ET*trademark intensity &  & -2.383 & -3.532 & -3.533 & -2.137 & -4.475 \\
+         &  & (2.651) & (2.719) & (2.714) & (3.110) & (3.825) \\
+         &  &  &  &  &  &  \\
+        \textbf{Part II: Bilateral Treaties} &  &  &  &  &  &  \\
+        Treaty &  &  & -0.295* & -0.295* & -0.286* &  \\
+         &  &  & (0.147) & (0.147) & (0.149) &  \\
+        Post 1904*trademark intensity &  &  & -7.271*** & -7.134*** & -6.988*** & -9.373*** \\
+         &  &  & (2.551) & (1.575) & (1.558) & (2.555) \\
+        Treaty*trademark intensity &  &  & 3.549 & 3.548 & 3.209 & 5.636 \\
+         &  &  & (3.043) & (3.041) & (3.076) & (4.446) \\
+          &  &  &  &  &  &  \\
+         \textbf{Part III: Provisional Trademark Code} &  &  &  &  &  &  \\
+        (Post 1906)*trademark intensity &  &  &  & -0.145 & -1.421 & -1.323 \\
+         &  &  &  & (2.317) & (2.214) & (2.538) \\
+         &  &  &  &  &  &  \\
+        \textbf{Part IV: 1923 Trademark Law} &  &  &  &  &  &  \\
+        (Post 1923)*trademark intensity &  &  &  &  & 3.581** & 3.929*** \\
+         &  &  &  &  & (1.336) & (1.451) \\
+         &  &  &  &  &  &  \\
+        Observations & 20,051 & 20,051 & 20,051 & 20,051 & 20,051 & 19,797 \\
+        R-squared & 0.765 & 0.765 & 0.766 & 0.766 & 0.767 & 0.777 \\
+        Firm FE & Yes & Yes & Yes & Yes & Yes & Yes \\
+        Ind*Year FE & Yes & Yes & Yes & Yes & Yes & Yes \\
+        Ctry*Year FE & No & No & No & No & No & Yes \\
+        Country-year controls & Yes & Yes & Yes & Yes & Yes & No \\ \hline \hline
+    \end{tabular}
+	\begin{tablenotes}[flushleft]
+		\item \footnotesize \textit{Notes:} This table compares the effect of the trademark law with earlier institutions including extraterritoriality, bilateral treaties, and the 1904 trademark code. The sample includes Western firms located in Shanghai's concessions with employment and activity information appearing between 1872-1936. The dependent variable is the natural log of a firm's employment in a given year. ET is a firm specific dummy denoting a firm's status of extraterritoriality in a given year. Treaties is a country-year specific dummy denoting the treaties between China and Great Britain, the U.S. and Japan, respectively. 1904 trademark code is a dummy denoting a trademark code proposed in 1904 but not enforced. Trademark law is a dummy denoting the trademark law established in 1923. Trademark intensity is a firm-specific measure of trademark dependence based on each firm's product mix as described in the activity text of the Hong List of each year and product-level trademark intensity calculated using each product's share in total pre-1923 trademarks. Controls are: dummy variables indicating the `equal treaties' that China entered with Germany and Austria in the 1920s, $\ln$(GDP/capita), $\ln$(population). Standard errors clustered by product category and country-year. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+\clearpage
+
+\section{Proofs} \label{sec:proofs}
+
+\subsection{Profits of authentic producers are increasing in $b_j$} \label{proof:auth_profits}
+
+Consider the profits of the authentic producer:
+
+\begin{eqnarray*}
+   \pi_j^a& =& \left(\frac{1}{\sigma - 1} \right) \left( \frac{\sigma}{\sigma - 1} \right)^{-\sigma} (1-s) Q P^{\sigma} b_j^{\sigma} c_j^{1-\sigma} - f
+\end{eqnarray*}
+
+Taking the derivative with respect to quality $b_j$:
+
+\begin{eqnarray*}
+\frac{\partial  \pi^a (b_j)}{\partial b_j}&=&\left(\frac{1}{\sigma - 1} \right) \left( \frac{\sigma}{\sigma - 1} \right)^{-\sigma} (1-s) Q P^{\sigma}\left( \sigma b_j^{\sigma - 1}c_j^{1-\sigma} +b_i^{\sigma}  ({1-\sigma})c_j^{-\sigma} c'(b_j) \right)
+\end{eqnarray*}
+
+This is positive if
+\begin{eqnarray*}
+    c(b_j)^{1-\sigma}\sigma b_j^{\sigma-1}&>&(\sigma-1) c(b_j)^{-\sigma}c'(b_j) b_j^{\sigma} \\
+     \frac{\sigma}{\sigma-1}  &>& \frac{c'(b_j)b_j}{c(b_j)} 
+\end{eqnarray*}
+
+
+\subsection{Proof to Proposition \ref{prop:M_s}}
+\begin{proof} 
+Taking the derivative of the  expression for $M$ given by equation \eqref{eq:M_solution} with respect to $s$ yields:
+
+\begin{equation*}
+\frac{\partial M}{\partial s} = - \frac{L}{\bar{r}^A}  \frac{\rho \frac{\sigma - 1}{\sigma} \frac{1}{(1-s)^2} }{\left( 1+\rho \frac{s}{1-s}  \frac{\sigma - 1}{\sigma}  \right)^2} \leq 0
+\end{equation*}
+
+\end{proof}
+
+\subsection{Proof to Proposition  \ref{prop:q_s}}
+
+\begin{proof}
+
+The output of an authentic producer is given by equation \eqref{eq:output_authentic}. Total income $I$ is given by income paid to workers at the wage rate of 1, i.e., $I = L$, and this is fixed and hence does not depend on $s$.
+
+The price index in equilibrium only depends on the number of products  actually produced, i.e., the mass of firms active in the market, $M$, and average quality:
+
+\begin{eqnarray*}
+P & = & \left( \int_{b_i^{\ast}}^{\infty} b_i^{\sigma} p(b_i)^{1-\sigma} M \frac{g(b_i)}{1 - G(b_i^{\ast})} d b_i \right)^{\frac{1}{1-\sigma}} \\
+& = & \left( \int_{b_i^{\ast}}^{\infty} b_i^{\sigma} \left(\frac{\sigma}{\sigma - 1} c(b_i) \right)^{1-\sigma} M \frac{g(b_i)}{1 - G(b_i^{\ast})} d b_i \right)^{\frac{1}{1-\sigma}} \\
+& = & \left(\frac{\sigma}{\sigma - 1}  \right)^{1-\sigma} M^{\frac{1}{1-\sigma}} \left( \int_{b_i^{\ast}}^{\infty} b_i^{\sigma} \left( c(b_i) \right)^{1-\sigma}  \frac{g(b_i)}{1 - G(b_i^{\ast})} d b_i \right)^{\frac{1}{1-\sigma}} \\
+& = & \left(\frac{\sigma}{\sigma - 1}  \right)^{1-\sigma} M^{\frac{1}{1-\sigma}} \left( \tilde{b_i}^{\sigma}c(\tilde{b_i})^{1-\sigma} \right)^{\frac{1}{1-\sigma}}
+\end{eqnarray*}
+
+Average quality is independent of $s$, because it only depends on the quality cutoff $b_i^{\ast}$ which is determined in the  zero profit condition equation  \eqref{eqn:fe_tm} that does not vary with $s$.
+
+Taken together, we can thus rewrite the output of the authentic producer as:
+
+
+\begin{eqnarray*}
+   q_i^A&=& (1-s) \bar{r}^A \left( 1+\rho_C \frac{s}{1-s}  \frac{\sigma - 1}{\sigma}   \right)  \left(\frac{\sigma}{\sigma - 1}  \right)^{-(1-\sigma)^2-\sigma}  \frac{b_i^{\sigma} c_i^{-\sigma}}{\tilde{b_i}^{\sigma}c(\tilde{b_i})^{1-\sigma}} 
+\end{eqnarray*}
+
+
+
+Now consider the ratio of the size of the authentic producer with (full) trademark protection relative to without trademark protection given by:
+
+\begin{eqnarray} \label{eq:output_authentic}
+\frac{q_i^A (s=0)}{q_i^A (s>0)} &=& \frac{1}{(1-s) \left( 1+\rho \frac{s}{1-s}  \frac{\sigma - 1}{\sigma}   \right) } 
+\end{eqnarray}
+
+The expression given in equation \eqref{eq:output_authentic} is larger than 1, because $\rho - 1\leq 0$:
+
+
+\begin{eqnarray*}
+\frac{1}{1-s}&\geq&\left( 1+\rho \frac{s}{1-s}  \frac{\sigma - 1}{\sigma}   \right) \\
+\sigma &\geq & \sigma - s\sigma + \rho s \sigma - \rho s \\
+0 &\geq & s \sigma (\rho - 1) -   \rho s 
+\end{eqnarray*}
+
+
+\end{proof}
+
+\subsection{Proof to Proposition  \ref{prop:welfare_s}}
+
+\begin{proof}
+
+We measure welfare by expected utility:
+
+\begin{eqnarray*}
+    E(U) &= & \lambda  \left( \int_{\omega \in \Omega} b(\omega) q(\omega)^{\frac{\sigma - 1}{\sigma}} d(\omega) \right)^{\frac{\sigma}{\sigma - 1}} \\
+ &= &   \lambda  \left( \int_{b^{\ast}}^{\infty} b_j q_j^{\frac{\sigma - 1}{\sigma}} M  \frac{g(b_j)}{1 - G(b_j^{\ast})}  d b_j  \right)^{\frac{\sigma}{\sigma - 1}} \\
+  &= &   \lambda M^{\frac{\sigma}{\sigma - 1}} \left( \int_{b^{\ast}}^{\infty} b_j q_j^{\frac{\sigma - 1}{\sigma}}   \frac{g(b_j)}{1 - G(b_j^{\ast})}  d b_j  \right)^{\frac{\sigma}{\sigma - 1}}
+\end{eqnarray*}
+Plugging in optimal quantities
+\begin{eqnarray*}
+   q_j&=& I P^{\sigma-1} \left(\frac{\sigma}{\sigma - 1} \right)^{-\sigma} \left( \frac{c_j}{b_j} \right)^{-\sigma}
+\end{eqnarray*}
+yields
+
+\begin{eqnarray*}
+ E(U)  &=&  \lambda  M^{\frac{\sigma}{\sigma - 1}} I P^{\sigma-1} \left(\frac{\sigma}{\sigma - 1} \right)^{-\sigma}   \left(  \int_{b^{\ast}}^{\infty} b_j^{\sigma} c_j^{1-\sigma}  \frac{g(b_j)}{1 - G(b_j^{\ast})}  d b_j \right)^{\frac{\sigma}{\sigma - 1}} \\
+ &=&  \lambda  M^{\frac{\sigma}{\sigma - 1}} I P^{\sigma-1} \left(\frac{\sigma}{\sigma - 1} \right)^{-\sigma}   \left( \tilde{b_i}^{\sigma}c(\tilde{b_i})^{1-\sigma} \right)^{\frac{\sigma}{\sigma - 1}} 
+\end{eqnarray*}
+
+\noindent where the last expression uses the expression for average quality adjusted cost, which only depends on the quality cutoff but not on $s$.
+
+
+
+Plugging the expression for $P$ from proof to Proposition \ref{prop:q_s}  into the expression for expected utility yields:
+\begin{eqnarray*}
+ E(U)      &=&  \lambda(s) L M(s)^{\frac{1}{\sigma-1}} \left(\frac{\sigma}{\sigma - 1}  \right)^{-(1-\sigma)^2-\sigma}        \left( \tilde{b_i}^{\sigma}c(\tilde{b_i})^{1-\sigma} \right)^{\frac{1}{\sigma - 1}} \\
+\end{eqnarray*}
+
+
+Since expected utility depends on $s$ only through $\lambda(s)$ and $M(s)$, and we know that both $\lambda$ and $M$ depend negatively on $s$  (the latter from Proposition  \ref{prop:M_s}), we show:
+
+\begin{equation*}
+\frac{\partial E(U)}{\partial s} = \psi \left( \underbrace{\frac{\partial \lambda(s)}{\partial s}}_{\leq 0}  M(s)^{\frac{1}{\sigma-1}} + \lambda(s)\frac{1}{\sigma-1} M^{\frac{2-\sigma}{\sigma -1 }} \underbrace{\frac{\partial M(s)}{\partial s}}_{\leq 0} \right) \leq 0
+\end{equation*}
+   
+where $\psi =  L \left(\frac{\sigma}{\sigma - 1}  \right)^{-(1-\sigma)^2-\sigma}        \left( \tilde{b_i}^{\sigma}c(\tilde{b_i})^{1-\sigma} \right)^{\frac{1}{\sigma - 1}} >0$.
+
+
+\end{proof}
+
+
+
+\newpage
+
+\section*{ONLINE APPENDIX}
+
+\renewcommand{\thepage}{Online Appendix p. \arabic{page}}
+\setcounter{page}{1} \setcounter{footnote}{0}
+
+\bigskip
+
+\section{Additional Analysis}
+
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\setcounter{figure}{0}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\setcounter{table}{0}
+
+
+\medskip
+
+\subsection{Restricting the Analysis to Goods Only}
+
+In our main paper, firms in both goods and services sectors are included in the analysis. In this subsection, we examine the robustness of the results when restricting the analysis to goods only. Note that as many of the firms in our sample sell both goods and services, this analysis drops firms that sell only services. 
+
+The results are reported in Table \ref{tab:goods_only}. We find that the estimated effect of the trademark law to increase in magnitude when considering goods only, and are statistically significant in most specifications.
+
+
+\subsection{Excluding Potential Interest Groups}
+
+We also conduct a different set of robustness checks and test whether excluding certain interest groups, namely, specific countries, products, or firms that were expected to benefit particularly from the trademark law, would affect our estimated effects of the trademark law on Western firm growth. The analysis is reported in Table \ref{tab:exclgroups}. 
+
+For example,  German firms lost extraterritoriality at the end of World War I and as a result would arguably have more interests in a domestic trademark law in China. We drop German firms in column (2) and find the results remain unaffected. Relatedly, among the different products, cigarettes were a product that was particularly affected by trademark infringements.\footnote{This is highlighted in \cite{Motono2011}, and also reflected in the data on advertisements that we describe in Section \ref{subsec:hist_trademarklaw}.} At the same time, the cigarette industry was heavily concentrated, with \emph{British American Tobacco (BAT)} being one of the big players. Big business groups could in principle have been lobbying for the introduction of the trademark law, thereby potentially violating the exogeneity assumption. While this seems unlikely given the historical context described in Section \ref{subsec:hist_trademarklaw}, we drop BAT in column (3) and the entire tobacco industry in column (4). The analysis shows that this does not affect our estimated effect of the trademark law, either.
+
+\subsection{Dropping a Country or Product}
+
+Next, we examine whether the estimated growth effects of the trademark law are due to a particular country or product. In Figures \ref{fig:dropcountry} and \ref{fig:dropproduct} below, we show that neither a specific country nor a specific product group is driving the results. The results are very similar in magnitude and mostly significant when we drop a country or product group at a time.
+
+\subsection{The Effect of the Trademark Law on Chinese Imports} \label{subsec:trade}
+
+In addition to firm growth, we would expect the trademark law to similarly affect China's imports of trademark-intensive products. 
+
+To investigate this, we compile bilateral product-level import data between China and the world for the period of 1920 to 1928.\footnote{We are grateful to Robert Bickers, Hans van den Ven, and their team for sharing with us their digitized data covering a large share of the final trade dataset.} The source for the import data  is the annual series ``Foreign Trade of China'' published by the \emph{Statistical Department of the Inspectorate General of Customs}. For each source country  and year, the data report the quantity and value of Chinese imports in a given product.
+
+We harmonize countries and products over time, resulting in data for 40 countries and 246 harmonized product categories and covering all years between 1920 and 1928. Harmonizing products over time is challenging, as the product classification system changed significantly in 1925. We harmonize products based on the description of product categories, and verify our matches using the publication in 1925 that also provided import data for the previous years 1924 and 1923 under the new classification. Overall, we are able to match 91\% of trade data in terms of imports value in 1924 either exactly over time (35\%) or closely (56\%) with deviations of less than 1\% of trade value in either product classification in both 1923 and 1924).\footnote{As sometimes errors in the trade data from previous years are updated in later publications, it is not entirely clear whether mismatches are due to mistakes in product assignment, or correction of previous mistakes in the official trade data.}  In our analysis we focus on the products that we can exactly match over time, and show robustness checks that include the remaining product categories.
+
+
+In order to examine this, we use bilateral product-specific import data and estimate the following equation:
+\begin{equation} \label{eqn:imports_regression}
+    \ln (imports_{pct}) = \beta_0 + \beta_1*TrademarkInt_{p}*PostLaw_t + FE_{pc} + FE_{ct} + \epsilon_{pct} 
+\end{equation}
+
+\noindent where $imports_{pct}$ are China's import values in product category $p$ from country $c$ in year $t$, $TrademarkInt_{p}$ is the trademark share of product $p$ as defined in the previous section, $PostLaw_t$ is a dummy that equals 1 if the year is equal to or after 1923,  $FE_{pc}$ are product-country specific fixed effect, and $FE_{ct}$ are country-year specific fixed effects. As different product categories can be of different size, we use the average import value between 1920-1922 of the product category in each country as weights in the regression. We cluster standard errors by product category $p$, in line with \cite{Bertrand2004}. We run the regression on the sample of all countries except Japan, as we will study Japan separately further below. We also drop rice from the products, as rice imports were unusually low in 1919 and 1920 due to poor harvests leading to rice shortages in all of Southeast Asia \citep{Kratoska1990}.\footnote{The recovery of rice imports from the rice crisis appeared as a pre-trend in our data, which would overestimate our effect.}  
+
+Table \ref{tab:trade_japan} presents the results. Column (1) shows that the imports of trademark-intensive products increased significantly after the establishment of the trademark law. Column (2) shows that the result is very similar when using country-year fixed effects instead of year specific fixed effects, our preferred specification.  The magnitude of the effect is sizeable: imports in the most trademark-intensive products in the trade data (i.e., tea and coffee with a trademark intensity of 0.073) increased by 1.2\%, while imports in the product category with mean trademark-intensity (i.e., chinaware with a trademark intensity of 0.026) increased by 0.4\% after the trademark law.
+
+Columns (1) and (2) of Table \ref{tab:trade_japan} explore the effect of the trademark law on the intensive margin of imports by using log of imports as the dependent variable, which by definition excludes observations with zero trade (70\% of observations). In columns (3) to (5) we explore the inclusion of the extensive margin in a variety of ways. Column (3) uses log (imports + 1) as the dependent variable, and column (4) uses the inverse hyperbolic sine transformation of imports. The effect of the trademark law remains positive and significant when including the extensive margin. Column (5) uses the simple import dummy and confirms that the trademark law also led to the establishment of new trade relationships in trademark-intensive products.
+
+As with the firm data, in order for our identification strategy to work, it is important to make sure that there are no pre-trends indicating imports of trademark-intensive goods might have grown even in the absence of the trademark law. To check for this, we estimate a full event study version of equation  \eqref{eqn:imports_regression} by estimating:
+\begin{equation} \label{eqn:imports_eventstudy}
+    \ln (imports_{pct}) = \beta_0 + \sum_{t=1920}^{1928} \beta_t*TrademarkInt_{p} + FE_{pc} + FE_{ct} + \epsilon_{pct} 
+\end{equation}
+
+\noindent Figure \ref{fig:importevent} shows the estimation results. Again, there is no evidence of pre-trends: the coefficients before 1923 are by an order of magnitude smaller and insignificantly different from zero, while coefficients after 1923 are consistently large, and mostly significantly different from zero. There, however, appears to be a slight decline in the effect of the trademark law over time. 
+
+Next we consider the effect of the trademark law on Chinese imports from Japan. If a large share of China's imports from Japan were counterfeits, we should expect the trademark law to have a smaller effect on imports from Japan. In Table \ref{tab:trade_japan} the results confirm what we have seen in the analysis of employment growth; imports from Japan fell, though the effect is not significant. The full event study for Japan is reported in Figure \ref{fig:importevent_japan}; while the event study is noisier than the one for Western imports in general, it does not find imports to grow after the trademark law.
+
+\subsection{The Effect of the Trademark Law on Quality Ads} \label{appsec:qualityads}
+
+
+The previous literature has also suggested that trademark protection may exert mixed effects on product quality. On the one hand, firms may improve product quality as they capture a larger market share, charge potentially higher prices, and/or experience larger demand for their products as consumers become less concerned about receiving counterfeits. On the other hand, authentic producers may have more incentives to offer a higher quality without trademark protection, in order to make it harder for counterfeiters to copy their products. 
+
+We explore these hypotheses using information available in the advertisement data. Specifically, we classify a subset of advertisements as ``quality ads'', if the text of the advertisements stresses the quality of the product, using words  such as \begin{CJK*}{UTF8}{gbsn} 质\end{CJK*} (quality), \begin{CJK*}{UTF8}{gbsn}特效\end{CJK*} (effective), \begin{CJK*}{UTF8}{gbsn}功效\end{CJK*} (efficacy), \begin{CJK*}{UTF8}{gbsn}功用\end{CJK*} (effect). In columns (1) to (3) of Table \ref{tab:qualityads} we find an insignificant increase in  firms' advertising highlighting product quality.
+
+\newpage
+
+\section{Online Appendix --- Tables}
+
+\begin{table}[hbt!]
+	\centering
+	\caption{Summary statistics}
+	    \label{tab:summarystat}
+\resizebox{0.8\textwidth}{!}{
+\begin{threeparttable}
+    \centering
+    \begin{tabular}{lccccc} \hline \hline
+          & (1) & (2) & (3) & (4) & (5) \\
+          & Observations & Mean & Std.dev. & Min & Max \\ \hline
+        Employee number & 3263 & 10.159 & 20.744 & 1 & 387 \\
+        Share of Chinese employees & 3263 & 0.297 & 0.382 & 0 & 1 \\
+        Number of products & 3263 & 1.633 & 1.219 & 1 & 11 \\
+        Trademark intensity & 3263 & 0.022 & 0.024 & 0 & 0.088 \\
+        Western firm dummy & 3263 & 0.644 & 0.479 & 0 & 1 \\
+        Chinese firm dummy & 3263 & 0.277 & 0.447 & 0 & 1 \\
+        Japanese firm dummy & 3263 & 0.080 & 0.271 & 0 & 1 \\ \hline \hline 
+    \end{tabular}
+	\begin{tablenotes}[flushleft]
+	    \item \footnotesize \textit{Notes:}
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+\begin{table}[hbt!]
+	\centering
+	\caption{The Effect of the 1923 Trademark Law on Employment of Western Firms: Goods only}
+	    \label{tab:goods_only}
+\resizebox{0.7\textwidth}{!}{    
+\begin{threeparttable}
+    \begin{tabular}{lcccc} \hline \hline
+         & (1) & (2) & (3) & (4) \\
+         & ln(empl) & ln(empl) & ln(empl) & ln(empl) \\ \hline
+         &  &  &  &  \\
+        Post 1923*trademark intensity & 2.533** & 2.437* & 2.508 & 2.557* \\
+         & (1.082) & (1.271) & (1.551) & (1.385) \\
+         &  &  &  &  \\
+        Observations & 863 & 850 & 816 & 1,221 \\
+        R-squared & 0.904 & 0.910 & 0.908 & 0.893 \\
+        Firm FE & Yes & Yes & Yes & Yes \\
+        Year FE & Yes &  &  &  \\
+        Ctry*Year FE &  & Yes & Yes & Yes \\
+        Ind*Year FE &  &  & Yes & Yes \\
+        Sample until & 1926 & 1926 & 1926 & 1930 \\ \hline \hline
+    \end{tabular} 
+	\begin{tablenotes}[flushleft] 
+		\item \footnotesize \textit{Notes:} The trademark intensity measure used in this table only considers products but not services of firms. Firms that only sell services are therefore dropped. Standard errors are clustered by product category. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+\begin{table}[hbt!]
+	\centering
+	\caption{Trademark Law and Import Growth --- Western Countries versus Japan}
+	    \label{tab:trade_japan}
+\resizebox{1\textwidth}{!}{    
+\begin{threeparttable}
+\begin{tabular}{lcccc} \hline  \hline
+ & (1) & (2) & (3) & (4) \\
+VARIABLES & ln(imports) & ln(imports+1) & $\sinh^{-1}$(imports) & Import dummy \\ \hline
+ &  &  &  &  \\
+Trademark intensity * (Post $\geq$ 1923) * All countries excl. Japan & 16.263** & 22.591** & 23.029** & 0.637** \\
+ & (7.415) & (9.194) & (9.337) & (0.290) \\
+Trademark intensity * (Post $\geq$ 1923) * Japan & -2.433 & -7.967 & -8.299 & -0.476 \\
+ & (11.321) & (12.705) & (12.896) & (0.517) \\
+ &  &  &  &  \\
+Observations & 11,071 & 14,958 & 14,958 & 14,958 \\
+R-squared & 0.906 & 0.863 & 0.858 & 0.583 \\
+Country-year FEs & yes & yes & yes & yes \\
+Country-prod FEs & yes & yes & yes & yes \\ \hline \hline
+\end{tabular}
+	\begin{tablenotes}[flushleft] 
+		\item \footnotesize \textit{Notes:} This table reports the estimated effects of the trademark law on China's imports, separately from all countries excluding Japan and from Japan. The sample includes products that can be matched exactly across different product classification schemes over time and excludes rice. The dependent variables are the natural log of the import value, the natural log of the import value plus 1, the inverse sine of the import value, and a dummy for the existence of imports, respectively. Post law is a dummy denoting the period after the establishment of the trademark law in 1923. Trademark intensity is a product-level trademark intensity calculated using each product's share in total pre-1923 trademarks. All regressions are weighted by the  import value  of the respective product in the country averaged over 1920-1922. Standard errors are clustered by product category. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+
+\begin{table}[htb!]
+	\centering
+	\caption{Quality Advertisements}
+    \label{tab:qualityads}
+\resizebox{0.7\textwidth}{!}{ 
+\begin{threeparttable}
+    \begin{tabular}{lccc} \hline \hline
+         & (1) & (2) & (3)  \\
+          &  Quality adv. & ln(quality adver- & $\sinh^{-1}$(quality)\\
+          &  dummy & tising days+1) & advertising)  \\ \hline
+         &  &  &    \\
+        Post 1923 * trademark intensity  &  &  &  \\
+        -- Western Firms & 0.116 & 0.974 & 0.991\\
+          & (0.426) & (0.689) & (0.750) \\
+         &  &  &    \\
+        -- Japanese Firms & n/a & n/a & n/a \\
+         &  &  &   \\
+        -- Chinese Firms & -0.364 & -0.003 & -0.120\\
+         & (0.269) & (0.664) & (0.696) \\
+                  &  &  &   \\
+        Observations & 3,135 & 3,135 & 3,135 \\
+        R-squared  & 0.581 & 0.668 & 0.666 \\
+        Firm FE  & Yes& Yes & Yes \\
+        Ctry*Year FE  & Yes& Yes & Yes \\
+        Ind*Year FE  & Yes& Yes & Yes \\ \hline \hline
+    \end{tabular}
+	\begin{tablenotes}[flushleft]
+		\item \footnotesize \textit{Notes:} This table reports the estimated effects of the trademark law on quality advertising of Western firms on Shen Bao. The sample includes Western firms located in Shanghai's concessions with employment and activity information between 1920-1926. The dependent variables are the dummy of having quality advertisements on Shen Bao in a specific year, logged numbers of quality advertising days of quality advertisements, and the inverse sine of quality advertising days of advertisements, respectively. Trademark law is a dummy denoting the trademark law established in 1923. Trademark intensity is a firm-specific measure of trademark dependence based on each firm's pre-1923 product mix and product-level trademark intensity calculated using each product's share in total pre-1923 trademarks. There is no effect estimated for Japanese firms, because there are no Japanese advertisements highlighting quality in our sample. Standard errors clustered by product category and country-year. *** p$<$0.01, ** p$<$0.05, * p$<$0.1.
+	\end{tablenotes}
+\end{threeparttable}
+}
+\end{table}
+
+\clearpage
+
+\newpage
+
+\section{Online Appendix --- Figures}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures092020/pdf_figures_202010/trademark_law_effect_by_tertile_groups_foreign.pdf}   
+    \caption{The Heterogeneous Effect of the Trademark Law across Western Firms}
+    \label{fig:westerntertile}            
+\end{figure}
+
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/dropping_one_country.png}   
+    \caption{The Effect of the Trademark Law on Employment of Western Firms, dropping one home country at a time}
+    \label{fig:dropcountry} 
+\end{figure}
+
+\begin{figure}[hbt!]
+    \centering
+    \includegraphics[height=0.7\textheight]{figures/dropping_one_product.png}   
+    \caption{The Effect of the Trademark Law on Employment of Western Firms, dropping one NCL product category at a time}
+    \label{fig:dropproduct} 
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/bil_trade_eventstudy.png}   
+    \caption{The Effect of the Trademark Law on Chinese Imports from Western countries: Event Study}
+    \label{fig:importevent} 
+\end{figure}
+
+\begin{figure}[ht]
+    \centering{
+    \includegraphics[width=0.7\textwidth]{figures/bil_trade_eventstudy_japan.png}   
+    \caption{The Effect of the Trademark Law on Chinese Imports from Japan}
+    \label{fig:importevent_japan}  
+    }
+    \flushleft{
+    \floatfoot{\textit{Notes:} Estimating equation  \eqref{eqn:imports_regression} is appended by observations from Japan, and all coefficients are estimated separately for Japan and non-Japanese countries. The figure just plots the time varying coefficients for Japan, as the coefficients for non-Japanese countries are identical to Figure  \ref{fig:importevent}.   }
+    }
+\end{figure}
+
+
+\end{document}
