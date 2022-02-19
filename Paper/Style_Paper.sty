@@ -1,0 +1,219 @@
+ %  chadstyle.sty   Chad Jones, 5/1/08
+%
+%  Chad's style file for nice paper format.
+%  Various ideas for this style are taken from
+%    -- Matthias Doepke and Michele Tertilt
+%    -- Tony Roberts
+
+\special{papersize=8.5in,11in}
+\usepackage{palatino,amssymb,amsfonts,amsmath,amsthm,latexsym,setspace,titlesec}
+\usepackage[dvips]{graphicx}
+\usepackage[round,longnamesfirst]{natbib}
+\usepackage{float,fancyhdr}
+\usepackage{makeidx}
+\usepackage{enumerate}
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{multirow}
+%\usepackage{booktabs}
+\usepackage{bigstrut}
+\usepackage{longtable}
+\usepackage{xr}
+\usepackage{afterpage}
+\usepackage{caption}
+
+
+%For curly quotation marks:
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+%Mara new:
+\usepackage{pdflscape}
+\usepackage[figuresleft]{rotating}
+
+%For big tables at the end of appendix:
+\usepackage{adjustbox}
+\usepackage{supertabular}
+\usepackage{hhline}
+\usepackage{bibunits}
+
+
+
+\usepackage{url}
+%\usepackage{natbib}
+\usepackage{chapterbib}
+
+\usepackage{booktabs}
+
+%For network graph:
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{decorations.markings}
+
+\usepackage{datetime}
+%\newdateformat{mydate}{\monthname[\THEMONTH] \THEYEAR}
+
+% Bibliography spacing:
+\setlength{\bibsep}{4.5pt}
+
+% example file to change the style of LaTeX
+% Tony Roberts May 2004
+% first colour for latex or pdflatex
+%\ifx\pdfoutput\@undefined\usepackage[usenames,dvips]{color}
+%\else\usepackage[usenames,dvipsnames]{color}
+% and fix pdf colour problems
+%\IfFileExists{pdfcolmk.sty}{\usepackage{pdfcolmk}}{}
+%\fi
+
+% Chad's colors:
+% See http://web.njit.edu/~kevin/rgb.txt.html for possibilities
+\definecolor{ChadDarkBlue}{rgb}{.1,0,.2}
+\definecolor{ChadBlue}{rgb}{.1,.1,.5}
+\definecolor{ChadRoyal}{rgb}{.2,.2,.8}
+\definecolor{ChadGreen}{rgb}{0,.4,0}    % Dark Green
+\definecolor{ChadRed}{rgb}{.5,0,.5}  % purple
+
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\definecolor{darkred}{rgb}{0.7,0.0,0.1}
+
+
+
+%Format of Sections and Subsections
+\titleformat{\section}{\large \bfseries \color{ChadBlue}}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{6pt}{6pt}
+\titleformat{\subsection}{\normalsize \bfseries \color{ChadBlue}}{\thesubsection}{1em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{3pt}
+\titleformat{\subsubsection}{\normalsize \it \color{ChadBlue}}{\thesubsubsection}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{6pt}{3pt}
+
+
+% Fix title, sections, etc.
+\let\LaTeXtitle\title
+\renewcommand{\title}[1]{\LaTeXtitle{\color{ChadBlue}{\LARGE #1}}}
+\renewcommand{\abstractname}{\color{ChadBlue}Abstract}
+\renewcommand{\figurename}{\color{ChadBlue}Figure}
+\renewcommand{\tablename}{\color{ChadBlue}Table}
+
+
+\let\LaTeX@startsection\@startsection
+\renewcommand{\@startsection}[6]{\LaTeX@startsection%
+{#1}{#2}{#3}{#4}{#5}{\color{ChadBlue}\raggedright #6}}
+
+% Fix periods at end of section numbers
+%\renewcommand \thesection {\@arabic\c@section.}
+%\renewcommand \thesubsection {\thesection\@arabic\c@subsection.}
+%\renewcommand \thesubsubsection{\thesubsection \@arabic\c@subsubsection.}
+
+
+% Margin, Paragraph Setup
+\onehalfspacing
+\textheight=23cm \textwidth=16.50cm \topmargin=-1.5cm
+\oddsidemargin=0mm \evensidemargin=0mm
+%\setlength{\parindent}{0em}
+%\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}
+%\setlength{\parsep}{0pt}
+\setlength{\parskip}{0pt}
+
+%% Setting up page headers
+%\pagestyle{fancy}
+%\rhead[]{\thepage}
+%\lhead[\thepage]{}
+%\cfoot[]{}
+%\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\runningheads}[2]{
+   \chead[\color{ChadGreen}{\uppercase {\footnotesize #1}}]  % Author page header
+   {\color{ChadGreen}{\uppercase {\footnotesize #2}}}  % Short title
+  }
+
+% Make hyperlinks jump more accurately
+\makeatletter
+\newcommand\org@hypertarget{}
+\let\org@hypertarget\hypertarget
+\renewcommand\hypertarget[2]{%
+\Hy@raisedlink{\org@hypertarget{#1}{}}#2%
+} \makeatother
+
+
+% Spacing in Tables and Figures
+%\renewcommand{\tabcolsep}{1pt}   % space between columns
+\renewcommand{\arraystretch}{1.25} % space between rows
+\addtolength{\textfloatsep}{0pt} % space between floats and text
+\addtolength{\abovecaptionskip}{0pt} % space above caption
+\addtolength{\belowcaptionskip}{.15in} % space below caption
+
+%Define new environments
+\newtheorem{theorem}{\color{ChadBlue}{Theorem}}
+\newtheorem{definition}{\color{ChadBlue}{Definition}}
+\newtheorem{proposition}{\color{ChadBlue}{Proposition}}
+\newtheorem{corollary}{\color{ChadBlue}{Corollary}}
+\newtheorem*{corollary1}{\color{ChadBlue}{Corollary 1}}
+\newtheorem*{corollary2}{\color{ChadBlue}{Corollary 2}}
+\newtheorem{lemma}{\color{ChadBlue}{Lemma}}
+
+
+\makeatletter
+\renewenvironment{quotation}
+               {\list{}{\listparindent=0pt%whatever you need
+                        \itemindent    \listparindent
+                        \leftmargin=20pt%  whatever you need
+                        \rightmargin=20pt%whatever you need
+                        \topsep=0pt%%%%%  whatever you need
+                        \parsep        \z@ \@plus\p@}%
+                \item\relax}
+               {\endlist}
+\makeatother
+
+
+%Add September 07, 2020
+\usepackage[flushleft]{threeparttable}
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+
+% Table options
+% Create new commands (\cmark \xmark) for the checkmarks and X-mark for the tables
+% In case these symbols are supposed to be changed, all one has to do is to change the number in \ding{number}
+% Number codes for symbols can be found here: http://willbenton.com/wb-images/pifont.pdf
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{53}}%
+
+% Space between table rows. Controlled by \addlinespace in stata
+% Use this command (\setlength) to reduce or increase it uniformly in the whole document
+%\setlength{\defaultaddspace}{1cm}
+
+% To have a centered/right/leftaligned table column with adjustable width
+\usepackage{array}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+
+% landscape mode
+\usepackage{lscape, subcaption}
+
+
+% Added by Felix Iglhaut. To be removed again. Nov3,2020
+\newcommand{\colr}[1]{\textcolor{red}{#1}}	 % Use \colr{} for red colored text
+\newcommand{\fir}[1]{\colr{FI: #1 }}
+
+%%% HYPERLINKS %%%%%%%%%%%%%%%%%%%%%
+\usepackage[colorlinks,breaklinks,
+     bookmarks=false,
+     pdfstartview=Fit,  % for fitting entire page; FitW just fits width
+     pdfview=Fit,       % after traversing a hyperlink
+     linkcolor=darkblue,
+     urlcolor=darkblue,
+     citecolor=darkblue,
+     hyperfootnotes=false,
+     pdfnewwindow=true
+         ]{hyperref}
+\usepackage[figure,table]{hypcap} % Correct a problem with hyperref
+\urlstyle{rm} %so it doesn't use a typewriter font for url's.
+
+%%%%%%%%%%%%%%%%%%%%%
